@@ -21,7 +21,68 @@
 	
 	<!--Tab-->
 	<div class="container">
-		
+		<div class="row pt-3">
+			<div class="col-md-8">
+				<h1>Curso de HTML</h1>
+				<h4>Subtítulo del curso.....</h4>
+				<h4>Dictado por.....</h4>
+			</div>
+			<div class="col-md-4">
+				<img src="../img/portfolio-7.jpg" alt="">
+			</div>
+		</div>
+		<div class="row pt-4">
+			<div class="col-md-8">
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" href="#Dirigido" role="tab" data-toggle="tab">Dirigido a</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Fecha" role="tab" data-toggle="tab">Fecha y duración</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Descripcion" role="tab" data-toggle="tab">Descripción</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Inversion" role="tab" data-toggle="tab">Inversión</a>
+					</li>
+				</ul>
+		<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="Programados">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur numquam molestias incidunt voluptas? Expedita laboriosam eligendi cum magnam quisquam dignissimos fuga optio officiis, dicta omnis? Sit enim corrupti aut magnam.
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim corrupti in eos aspernatur laudantium ut magni, perferendis fuga, officia magnam expedita? Optio, distinctio! Velit provident culpa obcaecati voluptate debitis laboriosam
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, provident optio, laudantium asperiores aspernatur eveniet minus iusto alias, eaque corporis perspiciatis autem sed distinctio eligendi nam architecto ratione repellendus cupiditate!</p>
+					</div>
+					<div role="tabpanel" class="tab-pane fade in active" id="Fecha">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur numquam molestias incidunt voluptas? Expedita laboriosam eligendi cum magnam quisquam dignissimos fuga optio officiis, dicta omnis? Sit enim corrupti aut magnam.
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim corrupti in eos aspernatur laudantium ut magni, perferendis fuga, officia magnam expedita? Optio, distinctio! Velit provident culpa obcaecati voluptate debitis laboriosam
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, provident optio, laudantium asperiores aspernatur eveniet minus iusto alias, eaque corporis perspiciatis autem sed distinctio eligendi nam architecto ratione repellendus cupiditate!</p>
+					</div>
+					<div role="tabpanel" class="tab-pane fade in active" id="Descripcion">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur numquam molestias incidunt voluptas? Expedita laboriosam eligendi cum magnam quisquam dignissimos fuga optio officiis, dicta omnis? Sit enim corrupti aut magnam.
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim corrupti in eos aspernatur laudantium ut magni, perferendis fuga, officia magnam expedita? Optio, distinctio! Velit provident culpa obcaecati voluptate debitis laboriosam
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, provident optio, laudantium asperiores aspernatur eveniet minus iusto alias, eaque corporis perspiciatis autem sed distinctio eligendi nam architecto ratione repellendus cupiditate!</p>
+					</div>
+					<div role="tabpanel" class="tab-pane fade in active" id="Inversion">
+						<p>Código de recaudo</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur numquam molestias incidunt voluptas? Expedita laboriosam eligendi cum magnam quisquam dignissimos fuga optio officiis, dicta omnis? Sit enim corrupti aut magnam.
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim corrupti in eos aspernatur laudantium ut magni, perferendis fuga, officia magnam expedita? Optio, distinctio! Velit provident culpa obcaecati voluptate debitis laboriosam
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, provident optio, laudantium asperiores aspernatur eveniet minus iusto alias, eaque corporis perspiciatis autem sed distinctio eligendi nam architecto ratione repellendus cupiditate!</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 pt-5">
+				<div class="thumbnail">
+					<div class="caption">
+						<p class="text-secondary">Descripción corta</p>
+						<p><center>Quo tempora possimus consequatur voluptate ipsa esse, atque sapiente sit amet aut earum provident accusantium sequi placeat quas deleniti numquam quaerat similique.</center></p>
+						<p class="text-secondary"><center><a href="../page/Programa_Especifico.php" class="btn btn-primary">Inscribirse</a></center></p>
+						<p class="text-secondary"><center><a href="../page/Programa_Especifico.php" class="btn btn-primary">PDF</a></center></p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>	
 	<!--Pie de página-->
 	<?php include("../section/footer.php"); ?>
