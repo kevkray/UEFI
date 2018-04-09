@@ -40,7 +40,7 @@
 							<div class="caption">
 								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="#" class="btn btn-primary">Action</a></p>
+								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
 					</div>
@@ -50,7 +50,7 @@
 							<div class="caption">
 								<h3 class="text-secondary">Curso 2</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="#" class="btn btn-primary">Action</a></p>
+								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
 					</div>
@@ -60,7 +60,7 @@
 							<div class="caption">
 								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="#" class="btn btn-primary">Action</a></p>
+								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
 					</div>
@@ -70,7 +70,7 @@
 							<div class="caption">
 								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="#" class="btn btn-primary">Action</a></p>
+								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
 					</div>
@@ -80,7 +80,7 @@
 							<div class="caption">
 								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="#" class="btn btn-primary">Action</a></p>
+								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
 					</div>
@@ -90,7 +90,7 @@
 							<div class="caption">
 								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="#" class="btn btn-primary">Action</a></p>
+								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
 					</div>
@@ -100,7 +100,7 @@
 							<div class="caption">
 								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="#" class="btn btn-primary">Action</a></p>
+								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
 					</div>
@@ -110,7 +110,7 @@
 							<div class="caption">
 								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="#" class="btn btn-primary">Action</a></p>
+								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
 					</div>
@@ -126,7 +126,7 @@
 							<div class="caption">
 								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn btn-default">Action</a></p>
+								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a> <a href="#" class="btn btn-default">Action</a></p>
 							</div>
 						</div>
 					</div>
@@ -136,7 +136,7 @@
 							<div class="caption">
 								<h3 class="text-secondary">Curso 2</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn btn-danger">Action</a></p>
+								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a> <a href="#" class="btn btn-danger">Action</a></p>
 							</div>
 						</div>
 					</div>
