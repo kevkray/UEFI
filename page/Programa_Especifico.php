@@ -25,7 +25,6 @@
 			<div class="col-md-8">
 				<h1>Curso de HTML</h1>
 				<h4>Subtítulo del curso.....</h4>
-				<h4>Dictado por.....</h4>
 			</div>
 			<div class="col-md-4">
 				<img src="../img/portfolio-7.jpg" alt="">
@@ -77,13 +76,14 @@
 					<div class="caption">
 						<p class="text-secondary">Descripción corta</p>
 						<p><center>Quo tempora possimus consequatur voluptate ipsa esse, atque sapiente sit amet aut earum provident accusantium sequi placeat quas deleniti numquam quaerat similique.</center></p>
+						<p>Estado</p>
 						<p class="text-secondary"><center><a href="../page/Programa_Especifico.php" class="btn btn-primary">Inscribirse</a></center></p>
-						<p class="text-secondary"><center><a href="../page/Programa_Especifico.php" class="btn btn-primary">PDF</a></center></p>
+						<p class="text-secondary"><center><a href="../page/Programa_Especifico.php" class="btn btn-primary">Ver más</a></center></p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 	<!--Pie de página-->
 	<?php include("../section/footer.php"); ?>
 	<!--Pie de página -->
