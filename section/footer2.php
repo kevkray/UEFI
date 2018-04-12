@@ -6,11 +6,11 @@
 </head>
 <body>
 <!--Pie de página-->
-    <footer id="footer">
+    <footer id="s-footer">
     	<div class="container">
     		<div class="row">
-    			<div class="col-md-4">
-                <h5>Unidad de Extensión de la facultad de Ingeniería de la Universidad Distrital Francisco José de Caldas</h5>
+    			<div class="col-md-4 s-footer__sitelinks">
+                <h4>Unidad de Extensión de la facultad de Ingeniería de la Universidad Distrital Francisco José de Caldas</h4>
                     <ul class="s-footer__linklist">
                         <li>
                             <p>Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional</p>
@@ -24,19 +24,19 @@
                 <h4>Enlaces</h4>
                     <ul class="s-footer__linklist">
                         <li>
-                            <a href="index.html">Inicio</a>
+                            <a href="index.php">Inicio</a>
                         </li>
                         <li>
-                            <a href="biografia.html">Biografía</a>
+                            <a href="biografia.html">Cursos</a>
                         </li>
                         <li>
-                            <a href="videos.html">Videos</a>
+                            <a href="videos.html">Diplomados</a>
                         </li>
                         <li>
-                            <a href="musica.html">Música</a>
+                            <a href="musica.html">Conocenos</a>
                         </li>
                         <li>
-                            <a href="educacion.html">Educación</a>
+                            <a href="educacion.html">Comvenios</a>
                         </li>
                         <li>
                             <a href="contacto.html">Contacto</a>
@@ -44,25 +44,13 @@
                     </ul>
                 </div>
                 <div class="col-md-4">
-                <h4>Enlaces</h4>
+                <h4>Contactenos</h4>
                     <ul class="s-footer__linklist">
                         <li>
-                            <a href="index.html">Inicio</a>
+                            <p> Director Extensión:<br>Victor Hugo Medina<br>unidad-extension-ing@udistrital.edu.co      
                         </li>
                         <li>
-                            <a href="biografia.html">Biografía</a>
-                        </li>
-                        <li>
-                            <a href="videos.html">Videos</a>
-                        </li>
-                        <li>
-                            <a href="musica.html">Música</a>
-                        </li>
-                        <li>
-                            <a href="educacion.html">Educación</a>
-                        </li>
-                        <li>
-                            <a href="contacto.html">Contacto</a>
+                            <p>(+57 1) 3239300 Ext. 1709<br>Cra 8 No. 40 - 78<br>Edificio Alejadro Suarez Copete, Piso 3<br>Bogotá D.C. - Colombia<br>Lunes a viernes de 8 a.m. a 5 p.m.</p>
                         </li>
                     </ul>
     			</div>
