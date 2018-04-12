@@ -13,7 +13,6 @@
 	<!--Hojas de estilo-->
 </head>
 <body>
-
 	<!--Header-->
 	<section id="inicio" class="sticky-top">
 		<?php include("../section/header.php");?>

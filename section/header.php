@@ -19,24 +19,24 @@
 			</button>
 			<!-- Navbar links -->
 			<div class="collapse navbar-collapse" id="generalNavbar">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
+				<ul class="navbar-nav ml-auto mt-5 pr-5 font-weight-bold"><!--class="ml-auto"-->
+					<li class="nav-item pr-2">
 						<a class="nav-link active" href="../page/Inicio.php">Inicio</a>
 					</li>
-					<li class="nav-item dropdown">
+					<li class="nav-item dropdown pr-2">
 						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Educación</a>
 						<div class="dropdown-menu navbar-dark">
-							<a href="../page/Cursos.php" class="dropdown-item">Cursos</a>
-							<a href="../page/Diplomados.php" class="dropdown-item">Diplomados</a>
+							<a href="../page/Cursos.php" class="dropdown-item font-weight-bold">Cursos</a>
+							<a href="../page/Diplomados.php" class="dropdown-item font-weight-bold">Diplomados</a>
 						</div>
 					</li> 
-					<li class="nav-item">
+					<li class="nav-item pr-2">
 						<a class="nav-link" href="../page/Conocenos.php">Conócenos</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item pr-2">
 						<a class="nav-link" href="../page/Convenios.php">Convenios</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item font-weight-bold pr-2">
 						<a class="nav-link" href="../page/Contactenos.php">Contáctenos</a>
 					</li>  
 				</ul>
