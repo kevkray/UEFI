@@ -7,11 +7,11 @@
 </head>
 <body>
 <!--navbar general-->
-	<section id="Cabecera" class="row-12">
+	<!--<section id="Cabecera" class="row-12">-->
 		<nav class="col navbar nav-general navbar-expand-md">
 			<!-- Brand -->
-			<img src="../img/LOGO-UD-1.png" alt="Logo UD" style="width:28%" class="pr-1">
-			<img src="../img/UEFIsmall.png" alt="Logo UEFI" style="width:10%"class="pl-1">
+			<img src="../img/LOGO-UD-1.png" alt="Logo UD" style="width:21%" class="pr-1">
+			<img src="../img/UEFIsmall.png" alt="Logo UEFI" style="width:8%"class="pl-1">
 
 			<!-- Toggler/collapsibe Button -->
 			<button class="navbar-toggler toggler-personalizado" type="button" data-toggle="collapse" data-target="#generalNavbar">
@@ -42,6 +42,6 @@
 				</ul>
 			</div> 
 		</nav>
-	</section>
+	<!--</section>-->
 </body>
 </html>
