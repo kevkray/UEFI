@@ -23,6 +23,10 @@
 	<div class="container">
 		<div class="row pt-4">
 			<div class="col-md-8">
+				
+				<h2 class="text-center">Curso especializado en fotogrametría con RPAS</h2>
+			</div>
+			<div class="col-md-8">
 				<ul class="nav nav-tabs" role="tablist">
 					<li class="nav-item">
 						<a class="nav-link active" href="#Dirigido" role="tab" data-toggle="tab">Dirigido a</a>
@@ -74,7 +78,7 @@
 					<div class="thumbnail">
 						<div class="caption">
 							<p class="text-secondary">Descripción corta</p>
-							<p><center>Quo tempora possimus consequatur voluptate ipsa esse, atque sapiente sit amet aut earum provident accusantium sequi placeat quas deleniti numquam quaerat similique.</center></p>
+							<p class="text-center">Quo tempora possimus consequatur voluptate ipsa esse, atque sapiente sit amet aut earum provident accusantium sequi placeat quas deleniti numquam quaerat similique.</p>
 							<p>Estado</p>
 							<p class="text-secondary"><center><a href="../page/Programa_Especifico.php" class="btn btn-primary">Inscribirse</a></center></p>
 							<p class="text-secondary"><center><a href="../page/Programa_Especifico.php" class="btn btn-primary">Ver más</a></center></p>
