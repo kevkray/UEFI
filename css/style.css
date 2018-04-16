@@ -1,5 +1,5 @@
 /***********************************
-Body
+Body (Color uefi: rgb(35, 93, 128); )
 ************************************/
 
 body {
@@ -70,7 +70,7 @@ footer a {
 
 footer h4 {
     font-family: "metropolis-bold", sans-serif;
-    font-size: 60%;
+    font-size: 70%;
     line-height: 1.286;
     text-transform: none;
     letter-spacing: .25rem;
@@ -78,14 +78,15 @@ footer h4 {
     color: #FFFFFF;
     margin-top: 0;
     position: relative;
+    text-align: center;
 }
 
 footer h4::after {
     content: "";
     display: block;
     height: 1px;
-    width: 120px;
-    background-color: rgb(45, 77, 255);
+    width: 100%;
+    background-color: rgb(35, 93, 128);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -111,6 +112,7 @@ footer h4::after {
 
 .s-footer__linklist li {
     padding-left: 0;
+    font-size: 70%;
 }
 
 

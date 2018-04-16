@@ -10,10 +10,10 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-md-4 s-footer__sitelinks">
-                <h4>Unidad de Extensión de la facultad de Ingeniería de la Universidad Distrital Francisco José de Caldas</h4>
+                <h4>Unidad de Extensión de la facultad de Ingeniería</h4>
                     <ul class="s-footer__linklist">
                         <li>
-                            <p>Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional</p>
+                        Universidad Distrital Francisco José de Caldas, Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional
                         </li>
                         <li>
                         <p>NIT. 899.999.230.7</p>
@@ -21,7 +21,7 @@
                     </ul>
                 </div>
                 <div class="col-md-4">
-                <h4>Enlaces</h4>
+                <h4> Visite los siguientes enlaces de interés </h4>
                     <ul class="s-footer__linklist">
                         <li>
                             <a href="index.php">Inicio</a>
@@ -36,7 +36,7 @@
                             <a href="musica.html">Conocenos</a>
                         </li>
                         <li>
-                            <a href="educacion.html">Comvenios</a>
+                            <a href="educacion.html">Convenios</a>
                         </li>
                         <li>
                             <a href="contacto.html">Contacto</a>
@@ -44,7 +44,7 @@
                     </ul>
                 </div>
                 <div class="col-md-4">
-                <h4>Contactenos</h4>
+                <h4>Consulte la información de Contacto</h4>
                     <ul class="s-footer__linklist">
                         <li>
                             <p> Director Extensión:<br>Victor Hugo Medina<br>unidad-extension-ing@udistrital.edu.co      
