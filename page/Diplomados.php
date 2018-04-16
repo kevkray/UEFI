@@ -4,22 +4,23 @@
 	<meta charset="UTF-8">
 	<title>Titulo UEFI</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<!--Hojas de estilo-->
+	<!-- Hojas de estilo -->
 	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../lib/imagehover/css/imagehover.min.css">
 	<link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../lib/animate/css/animate.min.css" >
-	<!--Hojas de estilo-->
+	<!-- /Hojas de estilo -->
 </head>
 <body>
 
-	<!--Header-->
+	<!-- Header -->
 	<section id="inicio" class="sticky-top">
 		<?php include("../section/header.php"); ?>
-	</section>	
+	</section>
+	<!-- /Header -->
 	
-	<!--Tab-->
+	<!-- Tab -->
 	<div class="container">
 		<ul class="nav nav-tabs pt-4 pb-5" role="tablist">
 			<li class="nav-item">
@@ -31,10 +32,11 @@
 		</ul>
 		<!-- Tab panes -->
 		<div class="tab-content">
+			<!-- Diplomados programados -->
 			<div role="tabpanel" class="tab-pane fade in active" id="Programados">
-			<!-- Thumbnails container -->
 				<div class="row">
 					<div class="col-lg-3 col-sm-3 ">
+						<!-- Thumbnails container -->
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
@@ -43,8 +45,10 @@
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
+						<!-- /Thumbnails container -->
 					</div>
 					<div class="col-lg-3 col-sm-3 ">
+						<!-- Thumbnails container -->
 						<div class="thumbnail">
 							<img src="../img/portfolio-6.jpg" width=100% alt="">
 							<div class="caption">
@@ -53,8 +57,10 @@
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
+						<!-- /Thumbnails container -->
 					</div>
 					<div class="col-lg-3 col-sm-3 ">
+						<!-- Thumbnails container -->
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
@@ -63,8 +69,10 @@
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
+						<!-- /Thumbnails container -->
 					</div>
 					<div class="col-lg-3 col-sm-3 ">
+						<!-- Thumbnails container -->
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
@@ -73,8 +81,10 @@
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
+						<!-- /Thumbnails container -->
 					</div>
 					<div class="col-lg-3 col-sm-3 ">
+						<!-- Thumbnails container -->
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
@@ -83,8 +93,10 @@
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
+						<!-- /Thumbnails container -->
 					</div>
 					<div class="col-lg-3 col-sm-3 ">
+						<!-- Thumbnails container -->
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
@@ -93,8 +105,10 @@
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
+						<!-- /Thumbnails container -->
 					</div>
 					<div class="col-lg-3 col-sm-3 ">
+						<!-- Thumbnails container -->
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
@@ -103,8 +117,10 @@
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
+						<!-- /Thumbnails container -->
 					</div>
 					<div class="col-lg-3 col-sm-3 ">
+						<!-- Thumbnails container -->
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
@@ -113,14 +129,16 @@
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
+						<!-- /Thumbnails container -->
 					</div>
 				</div>
-				<!-- /Thumbnails container -->
 			</div>
+			<!-- /Diplomados programados -->
+			<!-- Diplomados en curso -->
 			<div role="tabpanel" class="tab-pane fade" id="EnCurso">
-				<!-- Thumbnails container -->
 				<div class="row">
 					<div class="col-lg-3 col-sm-3 ">
+						<!-- Thumbnails container -->
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
@@ -129,8 +147,10 @@
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a> <a href="#" class="btn btn-default">Action</a></p>
 							</div>
 						</div>
+						<!-- /Thumbnails container -->
 					</div>
 					<div class="col-lg-3 col-sm-3 ">
+						<!-- Thumbnails container -->
 						<div class="thumbnail">
 							<img src="../img/portfolio-6.jpg" width=100% alt="">
 							<div class="caption">
@@ -139,12 +159,14 @@
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a> <a href="#" class="btn btn-danger">Action</a></p>
 							</div>
 						</div>
+						<!-- /Thumbnails container -->
 					</div>
 				</div>
-				<!-- /Thumbnails container -->
 			</div>
+			<!-- Diplomados en curso -->
 		</div>
-	</div>	
+	</div>
+
 	<!--Pie de página-->
 	<?php include("../section/footer.php"); ?>
 	<!--Pie de página -->
@@ -157,6 +179,6 @@
 	<script src="../js/custom.js"></script>
 	<script src="../lib/morphext/js/morphext.min.js"></script>
 	<script src="../lib/wow/js/wow.min.js"></script>
-	<!--Fin Librerias-->	
+	<!-- /Librerias-->	
 </body>
 </html>

@@ -4,28 +4,30 @@
 	<meta charset="UTF-8">
 	<title>Titulo UEFI</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<!--Hojas de estilo-->
+	<!-- Hojas de estilo -->
 	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../lib/imagehover/css/imagehover.min.css">
 	<link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../lib/animate/css/animate.min.css" >
-	<!--Hojas de estilo-->
+	<!-- /Hojas de estilo -->
 </head>
 <body>
 
-	<!--Header-->
+	<!-- Header -->
 	<section id="inicio" class="sticky-top">
 		<?php include("../section/header.php"); ?>
-	</section>	
+	</section>
+	<!-- /Header -->
 	
-	<!--Tab-->
 	<div class="container">
 		<div class="row pt-4">
+			<!-- Nombre del curso -->
 			<div class="col-md-8">
-				
 				<h2 class="text-center">Curso especializado en fotogrametría con RPAS</h2>
 			</div>
+			<!-- /Nombre del curso -->
+			<!-- Tab -->
 			<div class="col-md-8">
 				<ul class="nav nav-tabs" role="tablist">
 					<li class="nav-item">
@@ -41,7 +43,7 @@
 						<a class="nav-link" href="#Inversion" role="tab" data-toggle="tab">Inversión</a>
 					</li>
 				</ul>
-		<!-- Tab panes -->
+				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane fade in active" id="Dirigido">
 						<p>Dirigido a</p>
@@ -67,14 +69,19 @@
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim corrupti in eos aspernatur laudantium ut magni, perferendis fuga, officia magnam expedita? Optio, distinctio! Velit provident culpa obcaecati voluptate debitis laboriosam</p>
 					</div>
 				</div>
+				<!-- Tab panes -->
 			</div>
+			<!-- /Tab -->
 			<div class="col-md-4 pt-5">
+				<!-- Imagen -->
 				<div class="row pt-3">
 					<div class="col">
 						<img src="../img/portfolio-7.jpg" alt="">
 					</div>
 				</div>
+				<!-- /Imagen -->
 				<div class="row pt-3">
+					<!-- Thumbnail -->
 					<div class="thumbnail">
 						<div class="caption">
 							<p class="text-secondary">Descripción corta</p>
@@ -84,15 +91,16 @@
 							<p class="text-secondary"><center><a href="../page/Programa_Especifico.php" class="btn btn-primary">Ver más</a></center></p>
 						</div>
 					</div>
+					<!-- /Thumbnail -->
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--Pie de página-->
+	<!-- Pie de página -->
 	<?php include("../section/footer.php"); ?>
-	<!--Pie de página -->
+	<!-- /Pie de página -->
 
-	<!--Librerias-->
+	<!-- Librerias -->
 	<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   	<script src="../lib/bootstrap/js/jquery.min.js"></script>
   	<script src="../lib/bootstrap/js/popper.min.js"></script>
@@ -100,6 +108,6 @@
 	<script src="../js/custom.js"></script>
 	<script src="../lib/morphext/js/morphext.min.js"></script>
 	<script src="../lib/wow/js/wow.min.js"></script>
-	<!--Fin Librerias-->	
+	<!-- /Librerias -->
 </body>
 </html>

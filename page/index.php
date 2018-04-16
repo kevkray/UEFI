@@ -9,28 +9,13 @@
 </head>
 <body>
 
+<!-- Preloader -->
 <div id="preloader"></div>
+<!-- /Preloader -->
 
-<!--==========================
-Hero Section
-============================-->
-<!--<section id="hero">
-  <div class="hero-container">
-	<div class="wow fadeIn">
-	  <div class="hero-logo">
-		<img class="" src="../img/UEFI.png" alt="UEFI">
-	  </div>
-	  <h1>Universidad Distrital Francisco José de Caldas</h1><br>
-	  <h2><span class="rotating">Convenios, Cursos, Diplomados</span></h2>
-	  <div class="actions">
-		<a href="#inicio" class="btn-get-started">Conoce más de la UEFI </a>
-	  </div>
-	</div>
-  </div>
-</section>-->
-
-<!--Contenido especializado de la página-->
+<!-- Redirección a la página de inicio -->
 <?php include("inicio.php"); ?>
-<!--Fin Contenido especializado de la página-->
+<!-- /Redirección a la página de inicio -->
+
 </body>
 </html>
