@@ -47,7 +47,7 @@
                 <h4>Consulte la información de Contacto</h4>
                     <ul class="s-footer__linklist">
                         <li>
-                            <p> Director Extensión:<br>Victor Hugo Medina<br>unidad-extension-ing@udistrital.edu.co      
+                            <p> Director Extensión:<br>Victor Hugo Medina García<br>unidad-extension-ing@udistrital.edu.co      
                         </li>
                         <li>
                             <p>(+57 1) 3239300 Ext. 1709<br>Cra 8 No. 40 - 78<br>Edificio Alejadro Suarez Copete, Piso 3<br>Bogotá D.C. - Colombia<br>Lunes a viernes de 8 a.m. a 5 p.m.</p>
@@ -82,9 +82,20 @@
                 </div>
     		</div>
             <div class="row">
-    			<div class="col-md-12 align-self-center">
+                <!--Acreditación -->
+    			<div class="col-md-4 align-self-center">
+                <a href="https://www.udistrital.edu.co/" target="_balnk"><img src="../img/imgfooter/logoudfooter.png" width="90%"></a>
+                </div>
+                <!--Copyrigth -->
+    			<div class="s-footer__copyright col-md-4 align-self-center">
+                <span>© Copyright <strong>UEFI</strong></span><br>
+                <span>Todos los derechos reservados.</span><br>
+                <span>Sitio creado y administrado por la Unidad de Extensión de la Facultad de Ingeniería</span>
+                </div>
+                <!--Links -->
+    			<div class="col-md-4 align-self-center">
 					
-    			</div>
+                </div>
     		</div>
     	</div>
     </footer>

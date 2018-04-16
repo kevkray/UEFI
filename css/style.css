@@ -30,7 +30,7 @@ nav a {
 }
 
 .active {
-    color: #949292;
+    color: rgba(255, 255, 255, 0.842);
 }
 
 nav a:hover {
@@ -42,7 +42,7 @@ nav a:hover {
 }
 
 .dropdown-item:hover {
-    color: #0073e6;
+    color: rgb(35, 93, 128);
 }
 
 .dropdown-item:active {
@@ -60,12 +60,20 @@ footer {
     padding-bottom: 6rem;
     font-size: 1.5rem;
     line-height: 2;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.842);
     background-color: #111;
 }
 
 footer a {
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.active {
+    color: rgba(255, 255, 255, 0.842);
+}
+
+footer a:hover {
+    color: rgb(35, 93, 128);
 }
 
 footer h4 {
@@ -107,7 +115,7 @@ footer h4::after {
 }
 
 .s-footer__linklist a {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.829);
 }
 
 .s-footer__linklist li {
@@ -120,19 +128,9 @@ footer h4::after {
  * ## copyright
  * ------------------------------------------------------------------- */
 
-.s-footer__bottom .s-footer__copyright span {
-    display: inline-block;
-}
-
-.s-footer__bottom .s-footer__copyright span::after {
-    content: "|";
-    display: inline-block;
-    padding: 0 1rem 0 1.2rem;
-    color: rgba(255, 255, 255, 0.1);
-}
-
-.s-footer__bottom .s-footer__copyright span:last-child::after {
-    display: none;
+.s-footer__copyright span {
+    font-size: 70%;
+    text-align: center;
 }
 
 
