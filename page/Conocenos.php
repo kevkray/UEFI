@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="../lib/animate/css/animate.min.css" >
 	<!-- /Hojas de estilo -->
 </head>
-<body>
+<body class"prueba">
 
 	<!-- Header -->
 	<section id="inicio">
@@ -38,10 +38,13 @@
       <!-- /Imágenes de UEFI -->
       <!-- ¿Quiénes somos? -->
       <div class="col-md-6 align-self-center">
-        <p>La extensión es el conjunto de actividades que complementan la educación mediante
+        <h3 class="text-center">
+          ¿Quiénes somos?
+        </h3>
+        <p class="text-justify">La extensión es el conjunto de actividades que complementan la educación mediante
          la actualización y ptráctica profesional a través de la suscripción de convenios 
          interinstitucionales de servicios, asesorías, consultoría y la capacitación en 
-         Educación No Formal (diplomados, cursos), con un alto impacto social</p>
+         Educación No Formal (diplomados, cursos), con un alto impacto social.</p>
       </div>
       <!-- /¿Quiénes somos? -->
     </div>
@@ -50,7 +53,7 @@
       <div class="col-md-8 sliderMisVis">
         <div>
           <h3 class="text-center">Misión</h3>
-          <p>La dependencia Unidad de Extensión Facultad de Ingeniería tiene como misión, 
+          <p class="text-justify">La dependencia Unidad de Extensión Facultad de Ingeniería tiene como misión, 
           la consolidación del conocimiento, apoyada en el talento humano que responde eficientemente 
           a las necesidades y demandas de la sociedad, de los diferentes escenarios empresariales y 
           comerciales, de la comunidad académica y del Estado, mediante la suscripción de proyectos 
@@ -60,7 +63,7 @@
         </div>
         <div>
           <h3 class="text-center">Visión</h3>
-          <p>La Unidad de Estensión pretende a mediano plazo, consolidar el vínculo académico 
+          <p class="text-justify">La Unidad de Estensión pretende a mediano plazo, consolidar el vínculo académico 
           y profesional de la Facultad de Ingeniería, con el desarrollo sostenible del país 
           y la formación integral de la comunidad, facilitando el intercambio de productos 
           de su actividad académica, ofreciendo soluciones útiles para la sociedad y transmitiendo 
@@ -74,18 +77,18 @@
     <!-- Carousel Slick ¿Con quién hemos trabajado? -->
     <div class="row justify-content-center">
       <div class="col-md-8 sliderCQHT">
-        <div><img src="../img/clients/apple.png" width=40% alt="" class="img-fluid"></div>
-        <div><img src="../img/clients/atom.png" width=40% alt="" class="img-fluid"></div>
-        <div><img src="../img/clients/blackberry.png" width=40% alt="" class="img-fluid"></div>
-        <div><img src="../img/clients/dropbox.png" width=40% alt="" class="img-fluid"></div>
-        <div><img src="../img/clients/envato.png" width=40% alt="" class="img-fluid"></div>
-        <div><img src="../img/clients/firefox.png" width=40% alt="" class="img-fluid"></div>
-        <div><img src="../img/clients/joomla.png" width=40% alt="" class="img-fluid"></div>
-        <div><img src="../img/clients/magento.png" width=40% alt="" class="img-fluid"></div>
-        <div><img src="../img/clients/mozilla.png" width=40% alt="" class="img-fluid"></div>
-        <div><img src="../img/clients/redhat.png" width=40% alt="" class="img-fluid"></div>
-        <div><img src="../img/clients/ubuntu.png" width=40% alt="" class="img-fluid"></div>
-        <div><img src="../img/clients/wordpress.png" width=40% alt="" class="img-fluid"></div>
+        <div><img src="../img/clients/apple.png" width=40% alt="" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/atom.png" width=40% alt="" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/blackberry.png" width=40% alt="" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/dropbox.png" width=40% alt="" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/envato.png" width=40% alt="" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/firefox.png" width=40% alt="" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/joomla.png" width=40% alt="" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/magento.png" width=40% alt="" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/mozilla.png" width=40% alt="" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/redhat.png" width=40% alt="" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/ubuntu.png" width=40% alt="" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/wordpress.png" width=40% alt="" class="img-fluid m-auto"></div>
       </div>
     </div>
     <!-- /Carousel Slick ¿Con quién hemos trabajado? -->
