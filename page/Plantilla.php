@@ -21,7 +21,7 @@
 	<!-- /Header -->
 
 	<!-- Pie de página -->
-	<?php include("../section/footer.php"); ?>
+	<?php include("../section/footer2.php"); ?>
 	<!-- /Pie de página -->
 
 	<!-- Librerias -->
