@@ -182,11 +182,10 @@
     	<section id="InfoMapa" class="pt-5">
 			<div class="row">
 				<!-- Información -->
-				<div class="col-md-6">
+				<div class="col-md-6 text-center">
 					<h3 class="section-title text-center">Información</h3>
 					<div class="section-title-divider"></div>
 					<br>
-					<center>
 					Coordinador Unidad de Extensión Facultad de Ingeniería<br>
 					Victor Hugo Medina Garcia<br><br>
 
@@ -204,7 +203,6 @@
 
 					Horario de Atención<br>
 					Lunes a Viernes de 8:00 a.m. a 5:00 p.m <br><br>
-					</center>
     			</div>
 				<!-- /Información -->
 				<!-- Mapa -->

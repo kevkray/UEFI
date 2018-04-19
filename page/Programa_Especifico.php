@@ -24,7 +24,8 @@
 		<div class="row pt-4">
 			<!-- Nombre del curso -->
 			<div class="col-md-8">
-				<h2 class="text-center">Curso especializado en fotogrametría con RPAS</h2>
+				<h3 class="section-title text-center">Curso especializado en fotogrametría con RPAS</h3>
+				<div class="section-title-divider"></div>
 			</div>
 			<!-- /Nombre del curso -->
 			<!-- Tab -->

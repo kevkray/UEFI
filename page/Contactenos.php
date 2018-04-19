@@ -22,127 +22,47 @@
 
 	<div class="container pt-5">
 		<div class="row">
+			<!-- Envío de un mensaje -->
 			<div class="col-md-6">
-				<h3>Send Us A Message</h3>
-				<form>
+				<h3 class="section-title text-center">Envíanos un mensaje</h3>
+				<div class="section-title-divider"></div>
+				<form class="pt-4">
 					<input type="text" class="form-control" placeholder="Nombre">
 					<input type="email" class="form-control" placeholder="Correo">
 					<input type="text" class="form-control" placeholder="Asunto">
-					<textarea class="form-control" rows="3" placeholder="Mensaje"></textarea>
+					<textarea class="form-control" rows="9" placeholder="Mensaje"></textarea>
+					<div class="form-field">
+						<button class="btn-block btn-lg btn-primary">Enviar</button>
+                    </div>
 				</form>
 			</div>
+			<!-- /Envío de un mensaje -->
+			<!-- Información de contacto -->
+			<div class="col-md-6 text-center">
+					<h3 class="section-title text-center">Contacto</h3>
+					<div class="section-title-divider"></div>
+					<br>
+					Coordinador Unidad de Extensión Facultad de Ingeniería<br>
+					Victor Hugo Medina Garcia<br><br>
+
+					Correo<br>
+					medina@udistrital.edu.co<br><br>
+
+					Asistente encargado<br>
+					Oscar Leonardo Celis Granados<br><br>
+
+					Correo de la Unidad de Extensión<br>
+					unidad-extension-ing@udistrital.edu.co <br><br>
+
+					Teléfono<br>
+					323 93 00 Ext. 1711 -1709 <br>
+
+					Horario de Atención<br>
+					Lunes a Viernes de 8:00 a.m. a 5:00 p.m <br><br>
+    		</div>
+			<!-- /Información de contacto -->
 		</div>
 	</div>
-
-
-	    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact">
-
-        <div class="row contact-content" data-aos="fade-up">
-
-            <div class="contact-primary">
-
-                <h3 class="h6">Send Us A Message</h3>
-
-                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
-                    <fieldset>
-
-                        <div class="form-field">
-                            <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
-                        </div>
-                        <div class="form-field">
-                            <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
-                        </div>
-                        <div class="form-field">
-                            <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
-                        </div>
-                        <div class="form-field">
-                            <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
-                        </div>
-                        <div class="form-field">
-                            <button class="full-width btn--primary">Submit</button>
-                            <div class="submit-loader">
-                                <div class="text-loader">Sending...</div>
-                                <div class="s-loader">
-                                    <div class="bounce1"></div>
-                                    <div class="bounce2"></div>
-                                    <div class="bounce3"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </fieldset>
-                </form>
-
-                <!-- contact-warning -->
-                <div class="message-warning">
-                    Something went wrong. Please try again.
-                </div>
-
-                <!-- contact-success -->
-                <div class="message-success">
-                    Your message was sent, thank you!<br>
-                </div>
-
-            </div>
-            <!-- end contact-primary -->
-
-            <div class="contact-secondary">
-                <div class="contact-info">
-
-                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
-
-                    <div class="cinfo">
-                        <h5>Where to Find Us</h5>
-                        <p>
-                            1600 Amphitheatre Parkway<br> Mountain View, CA<br> 94043 US
-                        </p>
-                    </div>
-
-                    <div class="cinfo">
-                        <h5>Email Us At</h5>
-                        <p>
-                            contact@glintsite.com<br> info@glintsite.com
-                        </p>
-                    </div>
-
-                    <div class="cinfo">
-                        <h5>Call Us At</h5>
-                        <p>
-                            Phone: (+63) 555 1212<br> Mobile: (+63) 555 0100<br> Fax: (+63) 555 0101
-                        </p>
-                    </div>
-
-                    <ul class="contact-social">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                    <!-- end contact-social -->
-
-                </div>
-                <!-- end contact-info -->
-            </div>
-            <!-- end contact-secondary -->
-
-        </div>
-        <!-- end contact-content -->
-
-    </section>
-    <!-- end s-contact -->
 
 	<!-- Pie de página -->
 	<?php include("../section/footer.php"); ?>

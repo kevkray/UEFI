@@ -38,9 +38,8 @@
       <!-- /Imágenes de UEFI -->
       <!-- ¿Quiénes somos? -->
       <div class="col-md-6 align-self-center">
-        <h3 class="text-center">
-          ¿Quiénes somos?
-        </h3>
+        <h3 class="section-title text-center">¿Quiénes somos?</h3>
+        <div class="section-title-divider"></div>
         <p class="text-justify">La extensión es el conjunto de actividades que complementan la educación mediante
          la actualización y ptráctica profesional a través de la suscripción de convenios 
          interinstitucionales de servicios, asesorías, consultoría y la capacitación en 
@@ -52,7 +51,8 @@
     <div class="row justify-content-center">
       <div class="col-md-8 sliderMisVis">
         <div>
-          <h3 class="text-center">Misión</h3>
+          <h3 class="section-title text-center">Misión</h3>
+          <div class="section-title-divider"></div>
           <p class="text-justify">La dependencia Unidad de Extensión Facultad de Ingeniería tiene como misión, 
           la consolidación del conocimiento, apoyada en el talento humano que responde eficientemente 
           a las necesidades y demandas de la sociedad, de los diferentes escenarios empresariales y 
@@ -62,7 +62,8 @@
           fortaleciendo la Facultad de Ingeniería y a su vez, la Universidad.</p>
         </div>
         <div>
-          <h3 class="text-center">Visión</h3>
+          <h3 class="section-title text-center">Visión</h3>
+          <div class="section-title-divider"></div>
           <p class="text-justify">La Unidad de Estensión pretende a mediano plazo, consolidar el vínculo académico 
           y profesional de la Facultad de Ingeniería, con el desarrollo sostenible del país 
           y la formación integral de la comunidad, facilitando el intercambio de productos 
