@@ -37,7 +37,7 @@
       </div>
       <!-- /Imágenes de UEFI -->
       <!-- ¿Quiénes somos? -->
-      <div class="col-md-6 align-items-center">
+      <div class="col-md-6 align-self-center">
         <p>La extensión es el conjunto de actividades que complementan la educación mediante
          la actualización y ptráctica profesional a través de la suscripción de convenios 
          interinstitucionales de servicios, asesorías, consultoría y la capacitación en 
@@ -105,8 +105,37 @@
 	<script src="../lib/morphext/js/morphext.min.js"></script>
 	<script src="../lib/wow/js/wow.min.js"></script>
   <!-- /Librerias -->
-    <!-- Script de Carousel ¿Con quién hemos trabajado? -->
-    <script type="text/javascript">
+  <!-- Script de Carousel Imágenes de UEFI -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.sliderUEFI').slick({
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    });
+  </script>
+  <!-- /Script de Carousel Imágenes de UEFI -->
+  <!-- Script de Carousel Misión y visión -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.sliderMisVis').slick({
+        dots: true,
+        arrows: true,
+        autoplay: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    });
+  </script>
+  <!-- /Script de Carousel Misión y visión -->
+  <!-- Script de Carousel ¿Con quién hemos trabajado? -->
+  <script type="text/javascript">
     $(document).ready(function() {
       $('.sliderCQHT').slick({
         dots: true,
@@ -120,34 +149,6 @@
     });
   </script>
   <!-- /Script de Carousel ¿Con quién hemos trabajado? -->
-  <!-- Script de Carousel Misión y visión -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.sliderMisVis').slick({
-        dots: true,
-        arrows: false,
-        autoplay: false,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      });
-    });
-  </script>
-  <!-- /Script de Carousel Misión y visión -->
-  <!-- Script de Carousel Imágenes de UEFI -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.sliderUEFI').slick({
-        dots: true,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      });
-    });
-  </script>
-  <!-- /Script de Carousel Imágenes de UEFI -->
+
 </body>
 </html>
