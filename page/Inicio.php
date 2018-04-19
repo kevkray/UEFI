@@ -132,11 +132,11 @@
     							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
       								<div class="card-body">
 									  	<ul>
-										  	<li type="circle">Interventoría</li>
-											<li type="circle">Capacitación</li>
-											<li type="circle">Asistencia técnica y tecnológica</li>
+										  	<li type="circle">Proyectos de Interventoría</li>
+											<li type="circle">Proyectos de Capacitación</li>
+											<li type="circle">Proyectos de Asistencia técnica y tecnológica</li>
 											<li type="circle">Proyectos especiales</li>
-											<li type="circle">Consultorías</li>
+											<li type="circle">Consultorías Externas</li>
 										</ul>
       								</div>
     							</div>
@@ -186,15 +186,32 @@
 					<h3 class="section-title text-center">Información</h3>
 					<div class="section-title-divider"></div>
 					<br>
-					<p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui molestias ipsam inventore! Necessitatibus maxime, fugit nostrum perspiciatis recusandae ab magni earum, ad laboriosam alias dolorum voluptates corporis id sed veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga inventore consequuntur commodi beatae temporibus aliquam ad architecto natus quos tempore similique eum culpa molestias, sapiente ea ipsam reprehenderit iusto aliquid.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, obcaecati, quidem. Modi voluptates fuga perspiciatis quibusdam earum unde qui nostrum, quod similique repellendus ipsum, dicta voluptas ipsam minima laudantium doloribus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sapiente aut autem, laborum esse vel, quis fuga consectetur quisquam, asperiores nihil possimus, dicta! Sed velit blanditiis sequi deserunt voluptatibus! Ipsum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates iure, reprehenderit numquam quaerat mollitia blanditiis adipisci quidem at cumque sit. Ipsum molestias eum quos consequatur esse cupiditate reprehenderit voluptate ratione!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga cupiditate aspernatur blanditiis magni molestiae, saepe dolor eum dolorum eius, quos eaque quas maiores repellat cum harum quidem qui incidunt sed?</p>
+					<center>
+					Coordinador Unidad de Extensión Facultad de Ingeniería<br>
+					Victor Hugo Medina Garcia<br><br>
+
+					Correo<br>
+					medina@udistrital.edu.co<br><br>
+
+					Asistente encargado<br>
+					Oscar Leonardo Celis Granados<br><br>
+
+					Correo de la Unidad de Extensión<br>
+					unidad-extension-ing@udistrital.edu.co <br><br>
+
+					Teléfono<br>
+					323 93 00 Ext. 1711 -1709 <br><br>
+
+					Horario de Atención<br>
+					Lunes a Viernes de 8:00 a.m. a 5:00 p.m <br><br>
+					</center>
     			</div>
 				<!-- /Información -->
 				<!-- Mapa -->
 				<div class="col-md-6">
 					<h3 class="section-title text-center">Mapa</h3>
-    				<div class="section-title-divider"></div>
-    				<br>
-    				<p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aliquam sapiente id reprehenderit eligendi, delectus dicta quasi, quia obcaecati quam non esse sed aspernatur dignissimos ducimus animi veniam earum! Recusandae?</p>
+					<div class="section-title-divider"></div>
+    				<div id="map" style="width:100%;height:80%;"></div>   				
     			</div>
 				<!-- /Mapa -->
     		</div>
@@ -204,7 +221,7 @@
 	<!-- /Inicio -->
 	
 	<!-- Pie de página -->
-	<?php include("../section/footer2.php"); ?>
+	<?php include("../section/footer.php"); ?>
 	<!-- /Pie de página -->
 	
 	<!-- Librerias -->
@@ -212,8 +229,10 @@
   	<script src="../lib/bootstrap/js/popper.min.js"></script>
 	<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
 	<script src="../js/custom.js"></script>
+	<script src="../js/mapa.js"></script>
 	<script src="../lib/morphext/js/morphext.min.js"></script>
 	<script src="../lib/wow/js/wow.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
 	<!-- /Librerias -->
 
 </body>

@@ -145,7 +145,7 @@
     <!-- end s-contact -->
 
 	<!-- Pie de página -->
-	<?php include("../section/footer2.php"); ?>
+	<?php include("../section/footer.php"); ?>
 	<!-- /Pie de página -->
 
 	<!-- Librerias -->

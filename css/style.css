@@ -129,7 +129,7 @@ footer h4::after {
  * ------------------------------------------------------------------- */
 
 .s-footer__copyright span {
-    font-size: 70%;
+    font-size: 65%;
     text-align: center;
 }
 
@@ -253,7 +253,7 @@ Sections
 .section-title-divider {
     width: 50px;
     height: 3px;
-    background: #03C4EB;
+    background: rgb(35, 93, 128);
     margin: 0 auto;
     margin-bottom: 20px;
 }
