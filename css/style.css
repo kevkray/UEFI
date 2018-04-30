@@ -1,5 +1,6 @@
 /***********************************
 Body (Color uefi: rgb(35, 93, 128); )
+     (Color uefi: hsla(203, 57%, 32%, 1); )
 ************************************/
 
 body {
@@ -7,12 +8,13 @@ body {
     color: black;
 }
 
+
 /***********************************
 Navbar
 ************************************/
 
 .nav-principal {
-    background-color: rgb(19, 66, 95);
+    background-color: hsla(203, 53%, 24%);
     color: white;
 }
 
