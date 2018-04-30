@@ -6,10 +6,10 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<!-- Hojas de estilo -->
 	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../lib/imagehover/css/imagehover.min.css">
 	<link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../lib/animate/css/animate.min.css" >
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<!-- /Hojas de estilo -->
 </head>
 <body>
@@ -30,7 +30,7 @@
 						<div class="card-header" id="headingOne">
 							<!-- Título -->
 							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								<button class="btn btn-link btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 								Convenios interadministrativos suscritos en el año 2000
 								</button>
 							</h5>
@@ -90,7 +90,7 @@
 						<div class="card-header" id="headingTwo">
 							<!-- Título -->
 							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								<button class="btn btn-link btn-block" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 								Convenios interadministrativos suscritos en el año 2005
 								</button>
 							</h5>
@@ -150,7 +150,7 @@
 						<div class="card-header" id="headingThree">
 							<!-- Título -->
 							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								<button class="btn btn-link btn-block" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 								Convenios interadministrativos suscritos en el año 2010
 								</button>
 							</h5>
@@ -210,7 +210,7 @@
 						<div class="card-header" id="headingFour">
 							<!-- Título -->
 							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								<button class="btn btn-link btn-block" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 								Convenios interadministrativos suscritos en el año 2016
 								</button>
 							</h5>

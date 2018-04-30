@@ -7,7 +7,6 @@ body {
     color: black;
 }
 
-
 /***********************************
 Navbar
 ************************************/
@@ -17,12 +16,12 @@ Navbar
     border-color: rgb(252, 252, 252);
 }
 
-.nav-general {
-    background: rgb(35, 93, 128);
+.nav-sup {
+    background-color: rgb(35, 93, 128)
 }
 
-.nav-personalizada {
-    background: #383838;
+.nav-general {
+    background: rgb(35, 93, 128);
 }
 
 nav a {

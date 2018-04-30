@@ -5,11 +5,12 @@
 	<title>Inicio UEFI</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<!-- Hojas de estilo -->
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	
 	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../lib/imagehover/css/imagehover.min.css">
 	<link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../lib/animate/css/animate.min.css" >
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<!-- /Hojas de estilo -->
 </head>
 <body>
@@ -93,15 +94,15 @@
 			<div class="row">
 				<div class="col-md-6">
 					<!-- Información escrita del protafolio -->
-					<div class="row">
+					<div class="row justify-content-center">
 						<!-- Acordeón -->
 						<div id="accordion">
 							<!-- Extensión no formal -->
   							<div class="card">
     							<div class="card-header" id="headingOne">
       								<h5 class="mb-0">
-        								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          									Extensión no formal
+        								<button class="btn btn-link btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											Extensión no formal
         								</button>
       								</h5>
     							</div>		
@@ -124,7 +125,7 @@
   							<div class="card">
     							<div class="card-header" id="headingTwo">
       								<h5 class="mb-0">
-        								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        								<button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           									Hemos trabajado en:
         								</button>
       								</h5>
@@ -146,7 +147,7 @@
   							<div class="card">
     							<div class="card-header" id="headingThree">
       								<h5 class="mb-0">
-        								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        								<button class="btn btn-link btn-block collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
           									Proyectos sociales
         								</button>
       								</h5>
