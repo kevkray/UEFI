@@ -45,7 +45,7 @@
 							<div class="caption">
 								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
+								<p class="text-secondary"><a href="javascript:void( window.open( 'https://form.jotformz.com/81195077355664', 'blank', 'scrollbars=yes, toolbar=no, width=900, height=700' ))" class="btn btn-primary">Pre-inscripciones</a></p>
 							</div>
 						</div>
 						<!-- /Thumbnails container -->
