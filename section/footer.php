@@ -107,7 +107,7 @@
     	</div>
     </footer>
     <!-- Volver al principio de la página -->
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <button id="back-to-top" class="btn btn-circle btn-lg back-to-top" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fa fa-chevron-circle-up"></i></button>
     <!-- /Volver al principio de la página -->
   <!-- /Fin Pie de página -->
 </body>
