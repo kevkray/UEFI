@@ -106,6 +106,9 @@
     		</div>
     	</div>
     </footer>
-  <!-- #Fin Pie de página -->
+    <!-- Volver al principio de la página -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- /Volver al principio de la página -->
+  <!-- /Fin Pie de página -->
 </body>
 </html>

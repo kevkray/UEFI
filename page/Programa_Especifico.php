@@ -102,7 +102,6 @@
 	<!-- /Pie de página -->
 
 	<!-- Librerias -->
-	<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   	<script src="../lib/bootstrap/js/jquery.min.js"></script>
   	<script src="../lib/bootstrap/js/popper.min.js"></script>
 	<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
