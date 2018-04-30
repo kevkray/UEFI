@@ -21,7 +21,7 @@
 		<div class="collapse navbar-collapse" id="generalNavbar">
 			<ul class="navbar-nav ml-auto mt-5 pr-5 font-weight-bold">
 				<li class="nav-item pr-2">
-					<a class="nav-link active" href="../page/Inicio.php">Inicio</a>
+					<a class="nav-link" href="../page/Inicio.php">Inicio</a>
 				</li>
 				<li class="nav-item dropdown pr-2">
 					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Educación</a>

@@ -15,9 +15,9 @@
 <body>
 
 	<!-- Header -->
-	<section id="inicio">
-		<?php include("../section/header.php"); ?>
-	</section>	
+	<section id="inicio" class="sticky-top">
+		<?php include("../section/header.php");?>
+	</section>
 	<!-- /Header -->
 
 	<div class="container pt-5">

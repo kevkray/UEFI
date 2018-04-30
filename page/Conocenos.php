@@ -17,10 +17,10 @@
 <body class"prueba">
 
 	<!-- Header -->
-	<section id="inicio">
-		<?php include("../section/header.php"); ?>
-	</section>	
-  <!-- /Header -->
+	<section id="inicio" class="sticky-top">
+		<?php include("../section/header.php");?>
+	</section>
+	<!-- /Header -->
   
   <div class="container">
     <div class="row pt-5">

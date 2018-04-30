@@ -24,23 +24,26 @@
 	<div class="container">
 		<ul class="nav nav-tabs pt-4 pb-5" role="tablist">
 			<li class="nav-item">
-				<a class="nav-link active" href="#Programados" role="tab" data-toggle="tab">Programados</a>
+				<a class="nav-link active" href="#Programacion" role="tab" data-toggle="tab">En programación</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#EnCurso" role="tab" data-toggle="tab">En curso</a>
+				<a class="nav-link" href="#Inscripcion" role="tab" data-toggle="tab">En inscripción</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#Dictando" role="tab" data-toggle="tab">Dictando</a>
 			</li>
 		</ul>
 		<!-- Tab panes -->
 		<div class="tab-content">
-			<!-- Diplomados programados -->
-			<div role="tabpanel" class="tab-pane fade in active" id="Programados">
+			<!-- Diplomados en programación -->
+			<div role="tabpanel" class="tab-pane fade in active" id="Programacion">
 				<div class="row">
 					<div class="col-lg-3 col-sm-3 ">
 						<!-- Thumbnails container -->
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
-								<h3 class="text-secondary">Diplomado 1</h3>
+								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
@@ -52,7 +55,7 @@
 						<div class="thumbnail">
 							<img src="../img/portfolio-6.jpg" width=100% alt="">
 							<div class="caption">
-								<h3 class="text-secondary">Diplomado 2</h3>
+								<h3 class="text-secondary">Curso 2</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
@@ -64,7 +67,7 @@
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
-								<h3 class="text-secondary">Diplomado 1</h3>
+								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
@@ -76,7 +79,7 @@
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
-								<h3 class="text-secondary">Diplomado 1</h3>
+								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
@@ -88,7 +91,7 @@
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
-								<h3 class="text-secondary">Diplomado 1</h3>
+								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
@@ -100,7 +103,7 @@
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
-								<h3 class="text-secondary">Diplomado 1</h3>
+								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
@@ -112,7 +115,7 @@
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
-								<h3 class="text-secondary">Diplomado 1</h3>
+								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
@@ -124,7 +127,7 @@
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
-								<h3 class="text-secondary">Diplomado 1</h3>
+								<h3 class="text-secondary">Curso 1</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
@@ -133,18 +136,48 @@
 					</div>
 				</div>
 			</div>
-			<!-- /Diplomados programados -->
-			<!-- Diplomados en curso -->
-			<div role="tabpanel" class="tab-pane fade" id="EnCurso">
+			<!-- /Diplomados en programación -->
+			<!-- Diplomados en inscripción -->
+			<div role="tabpanel" class="tab-pane fade" id="Inscripcion">
 				<div class="row">
+				<div class="col-lg-3 col-sm-3 ">
+						<!-- Thumbnails container -->
+						<div class="thumbnail">
+							<img src="../img/portfolio-6.jpg" width=100% alt="">
+							<div class="caption">
+								<h3 class="text-secondary">Curso 1</h3>
+								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
+							</div>
+						</div>
+						<!-- /Thumbnails container -->
+					</div>
 					<div class="col-lg-3 col-sm-3 ">
 						<!-- Thumbnails container -->
 						<div class="thumbnail">
 							<img src="../img/portfolio-7.jpg" width=100% alt="">
 							<div class="caption">
-								<h3 class="text-secondary">Diplomado 1</h3>
+								<h3 class="text-secondary">Curso 2</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a> <a href="#" class="btn btn-default">Action</a></p>
+								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
+							</div>
+						</div>
+						<!-- /Thumbnails container -->
+					</div>
+				</div>
+			</div>
+			<!-- /Diplomados en inscripción -->
+			<!-- Diplomados en progreso -->
+			<div role="tabpanel" class="tab-pane fade" id="Dictando">
+				<div class="row">
+				<div class="col-lg-3 col-sm-3 ">
+						<!-- Thumbnails container -->
+						<div class="thumbnail">
+							<img src="../img/portfolio-7.jpg" width=100% alt="">
+							<div class="caption">
+								<h3 class="text-secondary">Curso 1</h3>
+								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
 						<!-- /Thumbnails container -->
@@ -154,17 +187,18 @@
 						<div class="thumbnail">
 							<img src="../img/portfolio-6.jpg" width=100% alt="">
 							<div class="caption">
-								<h3 class="text-secondary">Diplomado 2</h3>
+								<h3 class="text-secondary">Curso 2</h3>
 								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a> <a href="#" class="btn btn-danger">Action</a></p>
+								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
 							</div>
 						</div>
 						<!-- /Thumbnails container -->
 					</div>
 				</div>
 			</div>
-			<!-- Diplomados en curso -->
+			<!-- /Diplomados en progreso -->
 		</div>
+		<!-- /Tab panes -->
 	</div>
 
 	<!--Pie de página-->

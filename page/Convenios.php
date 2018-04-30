@@ -15,9 +15,9 @@
 <body>
 
 	<!-- Header -->
-	<section id="inicio">
-		<?php include("../section/header.php"); ?>
-	</section>	
+	<section id="inicio" class="sticky-top">
+		<?php include("../section/header.php");?>
+	</section>
 	<!-- /Header -->
 
 	<div class="container">
@@ -25,50 +25,246 @@
 			<div class="col-md">
 				<!-- Acordeón -->
 				<div id="accordion">
-					<!-- Extensión no formal -->
+					<!-- 2000 -->
 					<div class="card">
 						<div class="card-header" id="headingOne">
+							<!-- Título -->
 							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-								Extensión no formal
+								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								Convenios interadministrativos suscritos en el año 2000
 								</button>
 							</h5>
+							<!-- /Título -->
 						</div>
-						<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+						<!-- Tabla de convenios -->
+						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 							<div class="card-body">
-							<table class="table">
-  								<thead>
-    								<tr>
-										<th scope="col">#</th>
-										<th scope="col">First</th>
-										<th scope="col">Last</th>
-										<th scope="col">Handle</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
-									</tr>
-									<tr>
-										<th scope="row">2</th>
-										<td>Jacob</td>
-										<td>Thornton</td>
-										<td>@fat</td>
-									</tr>
-									<tr>
-										<th scope="row">3</th>
-										<td>Larry</td>
-										<td>the Bird</td>
-										<td>@twitter</td>
-									</tr>
-								</tbody>
-							</table>
+								<table class="table table-hover">
+  									<thead>
+    									<tr>
+											<th scope="col">Convenios</th>
+											<th scope="col">Estado</th>
+											<th scope="col">Contratante</th>
+											<th scope="col">Valor</th>
+											<th scope="col">Duración</th>
+											<th scope="col">Objeto</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Convenio Interadministrativo N. 003 de 2000 suscrito entre el 
+											Fondo de Desarrollo Local de Santa fe y la Universidad Distrital Francisco José de Caldas</td>
+											<td>Conciliación-Liquidación</td>
+											<td>Fondo de Desarrollo Local de Santa fe</td>
+											<td>$175.250.000</td>
+											<td>12 meses</td>
+											<td>Presar la asistencia técnico legal y psico-social a 220 predios 
+											del barrio del Dorado, para la obtención de los títulos de propiedad y 
+											posterior inscripción en la Oficina de Instrumentos Públicos de la ciudad</td>
+										</tr>
+										<tr>
+											<td>Jacob</td>
+											<td>Thornton</td>
+											<td>@fat</td>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>@mdo</td>
+										</tr>
+										<tr>
+											<td>Larry</td>
+											<td>the Bird</td>
+											<td>@twitter</td>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>@mdo</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
+						<!-- /Tabla de convenios -->
 					</div>
-					<!-- /Extensión no formal -->
+					<!-- /2000 -->
+					<!-- 2005 -->
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<!-- Título -->
+							<h5 class="mb-0">
+								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Convenios interadministrativos suscritos en el año 2005
+								</button>
+							</h5>
+							<!-- /Título -->
+						</div>
+						<!-- Tabla de convenios -->
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							<div class="card-body">
+								<table class="table table-hover">
+  									<thead>
+    									<tr>
+											<th scope="col">Convenios</th>
+											<th scope="col">Estado</th>
+											<th scope="col">Contratante</th>
+											<th scope="col">Valor</th>
+											<th scope="col">Duración</th>
+											<th scope="col">Objeto</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Convenio Interadministrativo N. 003 de 2000 suscrito entre el 
+											Fondo de Desarrollo Local de Santa fe y la Universidad Distrital Francisco José de Caldas</td>
+											<td>Conciliación-Liquidación</td>
+											<td>Fondo de Desarrollo Local de Santa fe</td>
+											<td>$ 175.250.000</td>
+											<td>12 meses</td>
+											<td>Presar la asistencia técnico legal y psico-social a 220 predios 
+											del barrio del Dorado, para la obtención de los títulos de propiedad y 
+											posterior inscripción en la Oficina de Instrumentos Públicos de la ciudad</td>
+										</tr>
+										<tr>
+											<td>Jacob</td>
+											<td>Thornton</td>
+											<td>@fat</td>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>@mdo</td>
+										</tr>
+										<tr>
+											<td>Larry</td>
+											<td>the Bird</td>
+											<td>@twitter</td>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>@mdo</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- /Tabla de convenios -->
+					</div>
+					<!-- /2005 -->
+					<!-- 2010 -->
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<!-- Título -->
+							<h5 class="mb-0">
+								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Convenios interadministrativos suscritos en el año 2010
+								</button>
+							</h5>
+							<!-- /Título -->
+						</div>
+						<!-- Tabla de convenios -->
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body">
+								<table class="table table-hover">
+  									<thead>
+    									<tr>
+											<th scope="col">Convenios</th>
+											<th scope="col">Estado</th>
+											<th scope="col">Contratante</th>
+											<th scope="col">Valor</th>
+											<th scope="col">Duración</th>
+											<th scope="col">Objeto</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Convenio Interadministrativo N. 003 de 2000 suscrito entre el 
+											Fondo de Desarrollo Local de Santa fe y la Universidad Distrital Francisco José de Caldas</td>
+											<td>Conciliación-Liquidación</td>
+											<td>Fondo de Desarrollo Local de Santa fe</td>
+											<td>$ 175.250.000</td>
+											<td>12 meses</td>
+											<td>Presar la asistencia técnico legal y psico-social a 220 predios 
+											del barrio del Dorado, para la obtención de los títulos de propiedad y 
+											posterior inscripción en la Oficina de Instrumentos Públicos de la ciudad</td>
+										</tr>
+										<tr>
+											<td>Jacob</td>
+											<td>Thornton</td>
+											<td>@fat</td>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>@mdo</td>
+										</tr>
+										<tr>
+											<td>Larry</td>
+											<td>the Bird</td>
+											<td>@twitter</td>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>@mdo</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- /Tabla de convenios -->
+					</div>
+					<!-- /2010 -->
+					<!-- 2016 -->
+					<div class="card">
+						<div class="card-header" id="headingFour">
+							<!-- Título -->
+							<h5 class="mb-0">
+								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								Convenios interadministrativos suscritos en el año 2016
+								</button>
+							</h5>
+							<!-- /Título -->
+						</div>
+						<!-- Tabla de convenios -->
+						<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+							<div class="card-body">
+								<table class="table table-hover">
+  									<thead>
+    									<tr>
+											<th scope="col">Convenios</th>
+											<th scope="col">Estado</th>
+											<th scope="col">Contratante</th>
+											<th scope="col">Valor</th>
+											<th scope="col">Duración</th>
+											<th scope="col">Objeto</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Convenio Interadministrativo N. 003 de 2000 suscrito entre el 
+											Fondo de Desarrollo Local de Santa fe y la Universidad Distrital Francisco José de Caldas</td>
+											<td>Conciliación-Liquidación</td>
+											<td>Fondo de Desarrollo Local de Santa fe</td>
+											<td>$ 175.250.000</td>
+											<td>12 meses</td>
+											<td>Presar la asistencia técnico legal y psico-social a 220 predios 
+											del barrio del Dorado, para la obtención de los títulos de propiedad y 
+											posterior inscripción en la Oficina de Instrumentos Públicos de la ciudad</td>
+										</tr>
+										<tr>
+											<td>Jacob</td>
+											<td>Thornton</td>
+											<td>@fat</td>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>@mdo</td>
+										</tr>
+										<tr>
+											<td>Larry</td>
+											<td>the Bird</td>
+											<td>@twitter</td>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>@mdo</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- /Tabla de convenios -->
+					</div>
+					<!-- /2016 -->
 				</div>
 				<!-- /Acordeón -->
 			</div>
