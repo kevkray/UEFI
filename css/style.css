@@ -13,43 +13,73 @@ body {
 Navbar
 ************************************/
 
+
+/* Barra principal */
+
 .nav-principal {
     background-color: hsla(203, 53%, 24%);
     color: white;
 }
+
+
+/* ¿Eliminar? */
 
 .toggler-personalizado .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(252,252,252, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     border-color: rgb(252, 252, 252);
 }
 
+
+/* ¿Eliminar? */
+
 .nav-sup {
-    background-color: rgb(35, 93, 128)
+    background-color: rgb(35, 93, 128);
 }
+
+
+/* Barra general */
 
 .nav-general {
     background: rgb(35, 93, 128);
 }
 
+
+/* Color de la letra en el navbar */
+
 nav a {
     color: #fff;
 }
+
+
+/* Color del enlace relacionado con la página actual */
 
 nav .active {
     color: hsla(0, 0%, 80%);
 }
 
+
+/* Color de la letra en el navbar al pasar el cursor por encima */
+
 nav a:hover {
     color: #272727;
 }
+
+
+/* ¿Eliminar? */
 
 .dropdown-menu {
     z-index: 1021;
 }
 
+
+/* Color del texto en un dropdown al pasar el cursor por encima */
+
 .dropdown-item:hover {
     color: rgb(35, 93, 128);
 }
+
+
+/* ¿Eliminar? */
 
 .dropdown-item:active {
     background: #fff;
@@ -70,13 +100,22 @@ footer {
     background-color: #111;
 }
 
+
+/* Letra del footer */
+
 footer a {
     color: rgba(255, 255, 255, 0.4);
 }
 
+
+/* No pertenece a Footer */
+
 .active {
     color: rgba(255, 255, 255, 0.842);
 }
+
+
+/* Letra del Footer al pasar el cursor por encima */
 
 footer a:hover {
     color: rgb(35, 93, 128);
@@ -95,6 +134,9 @@ footer h4 {
     text-align: center;
 }
 
+
+/* Separador horizontal */
+
 footer h4::after {
     content: "";
     display: block;
@@ -106,8 +148,29 @@ footer h4::after {
     bottom: 0;
 }
 
+
+/* ¿Eliminar? */
+
 .s-footer__main {
     margin-bottom: 3.6rem;
+}
+
+
+/* Botón para volver al inicio de la página */
+
+.back-to-top {
+    cursor: pointer;
+    background-color: hsla(0, 0%, 80%, 0.5);
+    color: hsla(203, 53%, 24%);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border-radius: 50%;
+}
+
+.back-to-top:hover {
+    color: rgb(35, 93, 128)
 }
 
 
@@ -211,24 +274,6 @@ footer h4::after {
     .s-footer__bottom .s-footer__copyright span::after {
         display: none;
     }
-}
-
-
-/* Botón para volver al inicio de la página */
-
-.back-to-top {
-    cursor: pointer;
-    background-color: hsla(0, 0%, 80%, 0.5);
-    color: hsla(203, 53%, 24%);
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    border-radius: 50%;
-}
-
-.back-to-top:hover {
-    color: rgb(35, 93, 128)
 }
 
 

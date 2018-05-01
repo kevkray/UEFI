@@ -16,10 +16,9 @@
 </head>
 <body class"prueba">
 
-	<!-- Header -->
-	<section id="inicio" class="sticky-top">
+  <section id="inicio" class="sticky-top">
+  <!-- Header -->
 		<?php include("../section/header.php");?>
-	</section>
 	<!-- /Header -->
   <!-- Navbar General -->
 	<div class="row nav-general">
@@ -68,7 +67,8 @@
 		</nav>
 		<!-- Main Navbar -->
 	</div>
-	<!-- /Navbar General -->
+  <!-- /Navbar General -->
+  </section>
   <div class="container">
     <div class="row pt-5">
       <!-- Imágenes de UEFI -->

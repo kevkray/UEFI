@@ -14,10 +14,9 @@
 </head>
 <body>
 
-	<!-- Header -->
 	<section id="inicio" class="sticky-top">
+	<!-- Header -->
 		<?php include("../section/header.php");?>
-	</section>
 	<!-- /Header -->
 	<!-- Navbar General -->
 	<div class="row nav-general">
@@ -67,6 +66,8 @@
 		<!-- Main Navbar -->
 	</div>
 	<!-- /Navbar General -->
+	</section>
+	
 	<div class="container pt-5">
 		<div class="row">
 			<!-- Envío de un mensaje -->
