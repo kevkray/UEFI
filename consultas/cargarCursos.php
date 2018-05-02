@@ -1,6 +1,6 @@
 <?php 
-	function imprimirPutas(){
-		$conexion=mysqli_connect("localhost","prepagap_root","camilobasededatos","prepagap_prepagapp") or
+	function cargarCursos(){
+		$conexion=mysqli_connect("localhost","root","","bduefi") or
     	die("Problemas con la conexión");
         $registros=mysqli_query($conexion,"select p.idputa, p.nombreputa, p.linkfotoperfil, p.descripcion, p.nicknameputa, GROUP_CONCAT(c.nombrecaracteristica) as caracteristicas from puta p LEFT JOIN putacaracteristicas pc ON p.idputa=pc.idputa LEFT JOIN caracteristicas c ON c.idcaracteristica=pc.idcaracteristica GROUP BY p.idputa") or die("Problemas en el select:".mysqli_error($conexion));
         $numeroRegistros = mysqli_num_rows($registros);
