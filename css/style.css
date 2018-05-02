@@ -30,13 +30,6 @@ Navbar
 }
 
 
-/* ¿Eliminar? */
-
-.nav-sup {
-    background-color: rgb(35, 93, 128);
-}
-
-
 /* Barra general */
 
 .nav-general {
@@ -62,13 +55,6 @@ nav .active {
 
 nav a:hover {
     color: #272727;
-}
-
-
-/* ¿Eliminar? */
-
-.dropdown-menu {
-    z-index: 1021;
 }
 
 
@@ -146,13 +132,6 @@ footer h4::after {
     position: absolute;
     left: 0;
     bottom: 0;
-}
-
-
-/* ¿Eliminar? */
-
-.s-footer__main {
-    margin-bottom: 3.6rem;
 }
 
 
