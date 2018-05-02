@@ -123,20 +123,16 @@
     </div>
     <!-- /Misión y visión -->
     <!-- Carousel Slick ¿Con quién hemos trabajado? -->
+    <h3 class="section-title text-center">Con quién hemos trabajado</h3>
+          <div class="section-title-divider"></div>
     <div class="row justify-content-center">
       <div class="col-md-8 sliderCQHT">
-        <div><img src="../img/clients/apple.png" width=40% alt="" class="img-fluid m-auto"></div>
-        <div><img src="../img/clients/atom.png" width=40% alt="" class="img-fluid m-auto"></div>
-        <div><img src="../img/clients/blackberry.png" width=40% alt="" class="img-fluid m-auto"></div>
-        <div><img src="../img/clients/dropbox.png" width=40% alt="" class="img-fluid m-auto"></div>
-        <div><img src="../img/clients/envato.png" width=40% alt="" class="img-fluid m-auto"></div>
-        <div><img src="../img/clients/firefox.png" width=40% alt="" class="img-fluid m-auto"></div>
-        <div><img src="../img/clients/joomla.png" width=40% alt="" class="img-fluid m-auto"></div>
-        <div><img src="../img/clients/magento.png" width=40% alt="" class="img-fluid m-auto"></div>
-        <div><img src="../img/clients/mozilla.png" width=40% alt="" class="img-fluid m-auto"></div>
-        <div><img src="../img/clients/redhat.png" width=40% alt="" class="img-fluid m-auto"></div>
-        <div><img src="../img/clients/ubuntu.png" width=40% alt="" class="img-fluid m-auto"></div>
-        <div><img src="../img/clients/wordpress.png" width=40% alt="" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/AlcaldiaBogota.jpg" width=60% alt="Alcaldía de Bogotá" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/ConsejoSupJudicatura.png" width=60% alt="Consejo Superior de la Judicatura" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/Dian.jpg" width=60% alt="DIAN" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/GobernacionCundinamarca.png" width=60% alt="Gobernacion de Cundinamarca" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/MinEducacion.jpg" width=60% alt="Ministerio de Educación" class="img-fluid m-auto"></div>
+        <div><img src="../img/clients/PoliciaNacional.jpg" width=60% alt="Policia Nacional" class="img-fluid m-auto"></div>
       </div>
     </div>
     <!-- /Carousel Slick ¿Con quién hemos trabajado? -->
