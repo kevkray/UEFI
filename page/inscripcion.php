@@ -72,117 +72,164 @@
 	<div class="container">
 		<h3 class="section-title text-center">Formulario de Inscripción</h3>
         <div class="section-title-divider"></div>
+			<form>
+				<div class="form-group row">
+					<label for="inputnombre" class="col-2 col-form-label">Nombre</label>
+					<div class="col-10">
+						<input class="form-control" type="text" value="" placeholder="Nombre" id="inputnombre" required oninvalid="setCustomValidity('El nombre es obligatorio')" 
+						oninput="setCustomValidity('')" maxlength="99" minlength="3">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputapellido" class="col-2 col-form-label" >Apellido</label>
+					<div class="col-10">
+						<input class="form-control" type="text" value="" placeholder="Apellido" id="inputapellido" required oninvalid="setCustomValidity('El apellido es obligatorio')" 
+						oninput="setCustomValidity('')" maxlength="99" minlength="3">
+					</div>
+				</div> 
+				<div class="form-group row">
+					<label for="selectdocumento"class="col-2 col-form-label">Tipo de documento</label>
+					<div class="col-10">
+						<select class="form-control" id="selectdocumento" required oninvalid="setCustomValidity('El documento de identificación es obligatorio')" 
+						oninput="setCustomValidity('')">
+						<option>Cédula</option>
+						<option>Tarjeta de Identidad</option>
+						<option>Cédula de Extrangería</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputnumerodocumento" class="col-2 col-form-label">Número documento</label>
+					<div class="col-10">
+						<input class="form-control" type="number" value="" placeholder="10223548593" id="inputnumerodocumento" pattern="[0-9]" required oninvalid="setCustomValidity('El número del documento de identificación es obligatorio')" 
+						oninput="setCustomValidity('')"maxlength="19" minlength="4">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputlugarinscrip" class="col-2 col-form-label">Lugar de Inscripción</label>
+					<div class="col-10">
+						<input class="form-control" type="text" value="" placeholder="Lugar de Inscripción del documento de identificación" id="inputlugarinscrip" required oninvalid="setCustomValidity('El lugar de inscripción del documento de identificación es obligatorio')" 
+						oninput="setCustomValidity('')" maxlength="149" minlength="3">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputfechanacimiento" class="col-2 col-form-label">Fecha de nacimiento</label>
+					<div class="col-10">
+						<input class="form-control" type="date" value="" id="inputfechanacimiento" required oninvalid="setCustomValidity('La fecha de nacimiento es obligatoria')" 
+						oninput="setCustomValidity('')" >
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputlugarnacimiento" class="col-2 col-form-label">Lugar de nacimiento</label>
+					<div class="col-10">
+						<input class="form-control" type="text" value="" placeholder="Lugar de nacimiento" id="inputlugarnacimiento" required oninvalid="setCustomValidity('El lugar de inscripción del documento de nacimiento es obligatorio')" 
+						oninput="setCustomValidity('')" maxlength="149" minlength="3">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputdireccionhogar" class="col-2 col-form-label">Dirección Hogar</label>
+					<div class="col-10">
+						<input class="form-control" type="text" value="" placeholder="Dirección del Hogar" id="inputdireccionhogar" required oninvalid="setCustomValidity('La dirección de residencia es obligatoria')" 
+						oninput="setCustomValidity('')" maxlength="149" minlength="8">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputdireccionoficina" class="col-2 col-form-label">Dirección Oficina</label>
+					<div class="col-10">
+						<input class="form-control" type="text" value="" placeholder="Dirección de oficina o correspondencia" id="inputdireccionoficina" maxlength="149">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputtelhogar" class="col-2 col-form-label">Telefono Hogar</label>
+					<div class="col-10">
+						<input class="form-control" type="number" value="" placeholder="9999999" id="inputtelhogar"pattern="[0-9]" maxlength="11">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputteloficina" class="col-2 col-form-label">Telefono Oficina</label>
+					<div class="col-10">
+						<input class="form-control" type="number" value="" placeholder="7777777" id="inputteloficina" pattern="[0-9]" maxlength="11">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputtelcelular" class="col-2 col-form-label">Telefono Celular</label>
+					<div class="col-10">
+						<input class="form-control" type="number" value="" placeholder="301 999 9999" id="inputtelcelular" pattern="[0-9].{10}" required oninvalid="setCustomValidity('El número telefónico celular es obligatorio')" 
+						oninput="setCustomValidity('')" maxlength="11">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputemail" class="col-2 col-form-label">Correo Electrónico</label>
+					<div class="col-10">
+						<input class="form-control" type="email" value="" placeholder="tu_correo@ejemplo.com" id="inputemail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required oninvalid="setCustomValidity('El correo electrónico es obligatorio')" 
+						oninput="setCustomValidity('')" maxlength="99" minlength="6">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputprofesion" class="col-2 col-form-label">Profesión</label>
+					<div class="col-10">
+						<input class="form-control" type="text" value="" placeholder="Profesión que desempeña" id="inputdireccionoficina" required oninvalid="setCustomValidity('La profesión es obligatoria')" 
+						oninput="setCustomValidity('')" maxlength="149" minlength="6">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="uploadfoto" class="col-2 col-form-label">Cargar foto 3X4</label>
+					<div class="col-10">
+						<input type="file" class="form-control-file" id="uploadfoto" aria-describedby="fileHelp" accept="image/jpg, imagen/png" required oninvalid="setCustomValidity('La foto 3X4 es obligatoria')" 
+						oninput="setCustomValidity('')" >
+						<small id="fileHelp" class="form-text text-muted">Cargar una foto de 3X4 fondo blanco o azul.</small>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="uploadhojavida" class="col-2 col-form-label">Cargar hoja de vida</label>
+					<div class="col-10">
+						<input type="file" class="form-control-file" id="uploadhojavida" aria-describedby="fileHelp" accept="application/pdf" required oninvalid="setCustomValidity('La hoja de vida es obligatoria')" 
+						oninput="setCustomValidity('')">
+						<small id="fileHelp" class="form-text text-muted">Cargar un hoja de vida en formato pdf.</small>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="uploadcedula" class="col-2 col-form-label">Cargar cédula</label>
+					<div class="col-10">
+						<input type="file" class="form-control-file" id="uploadcedula" aria-describedby="fileHelp" accept="image/jpg, imagen/png, application/pdf" required oninvalid="setCustomValidity('El escaner de la cédula es obligatoria')" 
+						oninput="setCustomValidity('')">
+						<small id="fileHelp" class="form-text text-muted">Cargar una foto png o jpg o achivo pdf con la cedula scaneada.</small>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="uploadcarneseguro" class="col-2 col-form-label">Cargar carné seguro</label>
+					<div class="col-10">
+						<input type="file" class="form-control-file" id="uploadcarneseguro" aria-describedby="fileHelp" accept="image/jpg, imagen/png, application/pdf" required oninvalid="setCustomValidity('El escaner del carné del seguro médico es obligatorio')" 
+						oninput="setCustomValidity('')">
+						<small id="fileHelp" class="form-text text-muted">Cargar una foto png o jpg o achivo pdf con el carné del seguro médico scaneado.</small>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="uploadconsignacion" class="col-2 col-form-label">Cargar consignación</label>
+					<div class="col-10">
+						<input type="file" class="form-control-file" id="uploadconsignacion" aria-describedby="fileHelp" accept="image/jpg, imagen/png, application/pdf" required oninvalid="setCustomValidity('El escaner del recibo de pago es obligatorio')" 
+						oninput="setCustomValidity('')">
+						<small id="fileHelp" class="form-text text-muted">Cargar una foto png o jpg o achivo pdf del recibo de pago del curso scaneado.(Se debe ver el timbre del Banco de Occidente)</small>
+					</div>
+				</div>
 
-		<div class="form-group row">
-			<label for="input text nombre" class="col-2 col-form-label">Nombre</label>
-			<div class="col-10">
-				<input class="form-control" type="text" value="" placeholder="Nombre" id="inputnombre">
-			</div>
+				<div class="form-group row">
+					<div class="col-xs-offset-3 col-xs-12">
+					<label class="checkbox-inline">
+						<input type="checkbox" value="agree" required oninvalid="setCustomValidity('Debe aceptar los Terminos y Condiciones')" 
+						oninput="setCustomValidity('')">  Accepto <a href="terminos.php">Terminos y condiciones</a>.
+					</label>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-xs-offset-3 col-xs-12">
+						<input type="submit" class="btn btn-primary" value="Enviar">
+						<input type="reset" class="btn btn-default" value="Limpiar">
+					</div>
+				</div>
+			</form>
 		</div>
-		<div class="form-group row">
-			<label for="input text apellido" class="col-2 col-form-label">Apellido</label>
-			<div class="col-10">
-				<input class="form-control" type="text" value="" placeholder="Apellido" id="inputapellido">
-			</div>
-		</div> 
-		<div class="form-group row">
-			<label for="Seleccion Documento"class="col-2 col-form-label">Tipo de documento</label>
-			<div class="col-10">
-				<select class="form-control" id="selectdocumento">
-				<option>Cédula</option>
-				<option>Tarjeta de Identidad</option>
-				<option>Cédula de Extrangería</option>
-				</select>
-			</div>
-		</div>
-		<div class="form-group row">
-			<label for="input text lugar inscripcion" class="col-2 col-form-label">Lugar de Inscripción</label>
-			<div class="col-10">
-				<input class="form-control" type="text" value="" placeholder="Lugar de Inscripción del documento" id="inputlugarinscrip">
-			</div>
-		</div> 
-		<div class="form-group row">
-			<label for="input text lugar nacimiento" class="col-2 col-form-label">Lugar de nacimiento</label>
-			<div class="col-10">
-				<input class="form-control" type="text" value="" placeholder="Lugar de nacimiento" id="inputlugarnacimiento">
-			</div>
-		</div>
-		
-
-
-<div class="form-group row">
-  <label for="example-search-input" class="col-2 col-form-label">Search</label>
-  <div class="col-10">
-    <input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-email-input" class="col-2 col-form-label">Email</label>
-  <div class="col-10">
-    <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-url-input" class="col-2 col-form-label">URL</label>
-  <div class="col-10">
-    <input class="form-control" type="url" value="https://getbootstrap.com" id="example-url-input">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
-  <div class="col-10">
-    <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-password-input" class="col-2 col-form-label">Password</label>
-  <div class="col-10">
-    <input class="form-control" type="password" value="hunter2" id="example-password-input">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-number-input" class="col-2 col-form-label">Number</label>
-  <div class="col-10">
-    <input class="form-control" type="number" value="42" id="example-number-input">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-datetime-local-input" class="col-2 col-form-label">Date and time</label>
-  <div class="col-10">
-    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-date-input" class="col-2 col-form-label">Date</label>
-  <div class="col-10">
-    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-month-input" class="col-2 col-form-label">Month</label>
-  <div class="col-10">
-    <input class="form-control" type="month" value="2011-08" id="example-month-input">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-week-input" class="col-2 col-form-label">Week</label>
-  <div class="col-10">
-    <input class="form-control" type="week" value="2011-W33" id="example-week-input">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-time-input" class="col-2 col-form-label">Time</label>
-  <div class="col-10">
-    <input class="form-control" type="time" value="13:45:00" id="example-time-input">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-color-input" class="col-2 col-form-label">Color</label>
-  <div class="col-10">
-    <input class="form-control" type="color" value="#563d7c" id="example-color-input">
-  </div>
-</div>
-</div>
+	
 
 
 	<!--/Formulario-->
