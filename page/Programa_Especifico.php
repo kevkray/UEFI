@@ -93,7 +93,7 @@
 				</ul>
 				<!-- Tab panes -->
 				<div class="tab-content">
-					<div role="tabpanel" class="tab-pane fade in active" id="Dirigido">
+					<div role="tabpanel" class="tab-pane in active" id="Dirigido">
 						<p>Dirigido a</p>
 						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur numquam molestias incidunt voluptas? Expedita laboriosam eligendi cum magnam quisquam dignissimos fuga optio officiis, dicta omnis? Sit enim corrupti aut magnam.
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim corrupti in eos aspernatur laudantium ut magni, perferendis fuga, officia magnam expedita? Optio, distinctio! Velit provident culpa obcaecati voluptate debitis laboriosam

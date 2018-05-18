@@ -83,7 +83,7 @@
 		<!-- Tab panes -->
 		<div class="tab-content">
 			<!-- Cursos en programación -->
-			<div role="tabpanel" class="tab-pane fade in active" id="Programacion">
+			<div role="tabpanel" class="tab-pane in active" id="Programacion">
 				<div class="row">
 					<div class="col-lg-3 col-sm-3 ">
 						<!-- Thumbnails container -->
