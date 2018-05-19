@@ -10,7 +10,8 @@ body {
 /** Para los enlaces **/
 
 a {
-    color: black;
+    color: #EEEEEE;
+    display: block;
 }
 
 a:hover {
@@ -49,4 +50,23 @@ nav.sidebar {
     color: grey;
     background: #394B59;
     /** Selección #394B59 **/
+}
+
+.wrapper {
+    display: flex;
+}
+
+ul.nav-tabs {
+    background: #394B59;
+    width: 40%;
+    min-height: -webkit-fill-available;
+}
+
+.titleSliderAdmin {
+    font-size: x-large;
+}
+
+.nav-item a:hover {
+    background: #2E3A46;
+    color: #EEEEEE;
 }

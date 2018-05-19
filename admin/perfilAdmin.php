@@ -35,7 +35,7 @@
           <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Unidad de Extensión</a>
           <!-- Dropdown -->
           <div class="dropdown-menu">
-            <a href="perfilAdmin.php" class="dropdown-item">Perfil</a>
+            <a href="perfil.php" class="dropdown-item">Perfil</a>
             <a href="loginAdmin.php" class="dropdown-item">Cerrar sesión</a>  
           </div>
           <!-- /Dropdown -->
