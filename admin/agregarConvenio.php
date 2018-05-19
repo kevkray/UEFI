@@ -58,7 +58,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a href="#agregarSubmenu" data-toggle="collapse" aria-expanded="true" class="titleSliderAdmin">
+      <a href="#agregarSubmenu" data-toggle="collapse" aria-expanded="true" class="titleSliderAdmin active">
         <i class="fa fa-plus">
           <span>
             Agregar

@@ -42,14 +42,11 @@ a:hover {
 nav.cabecera {
     color: grey;
     background: #1A2632;
-    /** Selección #2E3A46 **/
-    /** Selección #394B59 **/
 }
 
 nav.sidebar {
     color: grey;
     background: #394B59;
-    /** Selección #394B59 **/
 }
 
 .wrapper {
@@ -69,4 +66,34 @@ ul.nav-tabs {
 .nav-item a:hover {
     background: #2E3A46;
     color: #EEEEEE;
+}
+
+ul .active {
+    background: #2E3A46;
+}
+
+
+/** Login **/
+
+form {
+    background: #DDDDDD;
+    border-color: #CCCCCC;
+    border-style: groove;
+}
+
+.login-img {
+    color: #34aadc;
+    font-size: 50px;
+}
+
+.input-group div i {
+    color: #BBBBBB;
+}
+
+form a {
+    color: #888888;
+}
+
+form .btn {
+    border-radius: 0;
 }

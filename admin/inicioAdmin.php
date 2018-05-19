@@ -49,7 +49,7 @@
   <div class="wrapper">
   <ul id="tabs" class="nav nav-tabs flex-column" role="tablist">
     <li class="nav-item">
-      <a href="inicioAdmin.php" class="titleSliderAdmin">
+      <a href="inicioAdmin.php" class="titleSliderAdmin active">
         <i class="fa fa-home">
           <span>
             Inicio

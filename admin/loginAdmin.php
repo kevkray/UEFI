@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="../lib/imagehover/css/imagehover.min.css">
 	<link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../lib/animate/css/animate.min.css" >
-	<!--<link rel="stylesheet" type="text/css" href="../css/style.css">-->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
   <!-- /Hojas de estilo -->
   <!-- font icon -->
   <link href="css/elegant-icons-style.css" rel="stylesheet" />
@@ -86,24 +86,39 @@
 	<!-- /Navbar General -->
   </section>
   
-  <div class="container">
+  <div class="container pt-2 pb-2">
     <div class="row justify-content-center">
       <form class="login-form" action="inicioAdmin.php">
-        <div class="login-wrap">
-          <p class="login-img"><i class="icon_lock_alt"></i></p>
+        <div class="form-group">
+					<div class="input-group justify-content-center">
+						<p class="login-img"><i class="fa fa-lock pt-2 pb-2"></i></p>
+					</div>
           <div class="input-group">
-            <span class="input-group-addon"><i class="icon_profile"></i></span>
-            <input type="text" class="form-control" placeholder="Username" autofocus>
+						<div class="col-1">
+							<i class="fa fa-user"></i>
+						</div>
+            <div class="col">
+							<input type="text" class="form-control" placeholder="Username" autofocus>
+						</div>
           </div>
           <div class="input-group">
-            <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-            <input type="password" class="form-control" placeholder="Password">
+						<div class="col-1">
+							<i class="fa fa-key"></i>
+						</div>
+						<div class="col">
+							<input type="password" class="form-control" placeholder="Password" >
+						</div>
           </div>
-          <label class="checkbox">
-            <span class="pull-right self-justify-content"> <a href="#">¿Olvidó su contraseña?</a></span>
-          </label>
-          <button class="btn btn-primary btn-lg btn-block" type="submit">Acceder</button>
-          <!--<button class="btn btn-info btn-lg btn-block" type="submit">Signup</button>-->
+					<center>
+					<label class="checkbox">
+            <span class="pull-right"> <a href="#">¿Olvidó su contraseña?</a></span>
+					</label>
+					</center>
+					<span>
+						<div class="px-3">
+					<button class="btn btn-primary btn-lg btn-block" type="submit">Acceder</button>
+					</div>
+					</span>
         </div>
       </form>
     </div>

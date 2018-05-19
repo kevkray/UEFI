@@ -71,7 +71,7 @@
       </ul>
     </li>
     <li class="nav-item">
-      <a href="#consultarSubmenu" data-toggle="collapse" aria-expanded="true" class="titleSliderAdmin">
+      <a href="#consultarSubmenu" data-toggle="collapse" aria-expanded="true" class="titleSliderAdmin active">
         <i class="fa fa-eye">
           <span>
             Consultar
