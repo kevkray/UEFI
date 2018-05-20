@@ -13,23 +13,36 @@
 	<!-- /Hojas de estilo -->
 </head>
 <body>
-	<!--Código de consultas a la BD-->
+
+<!--Código de consultas a la BD-->
 	<?php include '../consultas/conexion.php';
-		function generarlistaCursos() {
+		function imprimirCurso() {
 			$conexion=mysqli_connect("localhost","root","","bduefi") or
 			die("Problemas con la conexión");
 			//pa es programaacademico
 			//tpa es tipoprogramaacademico
-			$registros=mysqli_query($conexion,"select pa.nomprogramaacademico, pa.peqdescripprogaca from programaacademico pa where pa.idtipoprogramaacademico=1") or die("Problemas en el select:".mysqli_error($conexion));
+			$registros=mysqli_query($conexion,"select pa.nomprogramaacademico, pa.peqdescripprogaca, pa.idtipoestado, te.nombretipoestado from programaacademico pa, tipoestado te where pa.idtipoestado=te.idtipoestado and pa.idtipoprogramaacademico=1") or die("Problemas en el select:".mysqli_error($conexion));
 			$numeroRegistros = mysqli_num_rows($registros);
 			$contador=0;
 			if ($numeroRegistros!=0) {
 				while ($reg=mysqli_fetch_array($registros)){
 					$nombrecurso = $reg['nomprogramaacademico'];
 					$descurso = $reg['peqdescripprogaca'];
-					//echo "<div role=\"tabpanel\" class=\"tab-pane fade\" id=".$nombrecurso.">";
-					//echo "<div role=\"tabpanel\" class=\"tab-pane fade\" id=".$descurso.">";
-				
+					$estado= $reg['idtipoestado'];
+					$nombreestado=$reg['nombretipoestado'];
+
+						echo "<div class=\"col-lg-3 col-sm-3\">";
+							//<!-- Thumbnails container -->";
+								echo "<div class=\"thumbnail\">";
+								echo "<img src=\"../img/portfolio-7.jpg\" width=100% >";
+								echo "<div class=\"caption\">";
+									echo "<h3 class=\"text-secondary\">$nombrecurso</h3>";
+									echo "<p class=\"text-secondary\">$descurso</p>";
+									echo "<p class=\"text-secondary\"><a href=\"../page/Programa_Especifico.php\" class=\"btn btn-primary\">Más Información</a></p>";
+								echo "</div>";
+							echo "</div>";
+							//<!-- /Thumbnails container -->
+						echo "</div>";
 				}
 				mysqli_close($conexion);
 			}else{
@@ -38,9 +51,11 @@
 			}
 		}
 
-
 	?>
-	<!--Código de consultas a la BD-->
+	
+
+
+<!--Código de consultas a la BD-->
 
 	<section id="inicio" class="sticky-top">
 	<!-- Header -->
@@ -110,83 +125,26 @@
 		</ul>
 		<!-- Tab panes -->
 		<div class="tab-content">
+
 			<!-- Cursos en programación -->
 			<div role="tabpanel" class="tab-pane in active" id="Programacion">
 				<div class="row">
-				<?php generarlistaCursos();?>
-					<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-	
-							<img src="../img/portfolio-7.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 1</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
+					<?php imprimirCurso();?>
 				</div>
 			</div>
 			<!-- /Cursos en programación -->
+
 			<!-- Cursos en inscripción -->
 			<div role="tabpanel" class="tab-pane fade" id="Inscripcion">
 				<div class="row">
-				<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-6.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 1</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
-					<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-7.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 2</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
+					<?php imprimirCurso();?>
 				</div>
 			</div>
 			<!-- /Cursos en inscripción -->
 			<!-- Cursos en dictando -->
 			<div role="tabpanel" class="tab-pane fade" id="Dictando">
 				<div class="row">
-				<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-7.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 1</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
-					<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-6.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 2</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
+					<?php imprimirCurso();?>
 				</div>
 			</div>
 			<!-- /Cursos en progreso -->
