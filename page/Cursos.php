@@ -111,7 +111,7 @@
 		<!-- Tab panes -->
 		<div class="tab-content">
 			<!-- Cursos en programación -->
-			<div role="tabpanel" class="tab-pane fade in active" id="Programacion">
+			<div role="tabpanel" class="tab-pane in active" id="Programacion">
 				<div class="row">
 				<?php generarlistaCursos();?>
 					<div class="col-lg-3 col-sm-3 ">
