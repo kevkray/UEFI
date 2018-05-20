@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Inicio</title>
+	<title>Perfil</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<!-- Hojas de estilo -->
 	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
@@ -34,7 +34,7 @@
           <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Unidad de Extensión</a>
           <!-- Dropdown -->
           <div class="dropdown-menu">
-            <a href="perfil.php" class="dropdown-item">Perfil</a>
+            <a href="perfilAdmin.php" class="dropdown-item">Perfil</a>
             <a href="loginAdmin.php" class="dropdown-item">Cerrar sesión</a>  
           </div>
           <!-- /Dropdown -->
@@ -48,7 +48,7 @@
     <!-- Barra lateral de navegación -->
     <ul id="tabs" class="nav nav-tabs flex-column" role="tablist">
       <li class="nav-item">
-        <a href="inicioAdmin.php" class="titleSliderAdmin active">
+        <a href="inicioAdmin.php" class="titleSliderAdmin">
           <i class="fa fa-home">
             <span>
               Inicio
@@ -96,41 +96,14 @@
     <!-- /Barra lateral de navegación -->
     <!-- Contenido específico de la página -->
     <div class="container">
-      <div class="row justify-content-around buttonIndex py-3">
-        <div class="col-5 buttonCursos text-center">
-          <a href="consultarProgAca.php">
-            <i class="fa fa-book py-4"><span class="px-1">Cursos</span></i>
-          </a>
-        </div>
-        <div class="col-5 buttonDiplomados text-center">
-          <a href="consultarProgAca.php">
-            <i class="fa fa-book py-4"><span class="px-1">Diplomados</span></i>
-          </a>
-        </div>
-      </div>
-      <div class="row justify-content-around buttonIndex py-3">
-        <div class="col-5 buttonConvenios text-center">
-          <a href="consultarConvenios.php">
-            <i class="fa fa-briefcase py-4"><span class="px-1">Convenios</span></i>
-          </a>
-        </div>
-        <div class="col-5 buttonInscripciones text-center">
-          <a href="consultarInscripciones.php">
-            <i class="fa fa-user-plus py-4"><span class="px-1">Inscripciones</span></i>
-          </a>
+      <div class="row">
+        <div class="col">
+          
         </div>
       </div>
     </div>
-    <!--<div id="content">
-      <h2>Lorem Ipsum Dolor</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <div class="line"></div>
-      <h2>Lorem Ipsum Dolor</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <div class="line"></div>
-    </div>-->
     <!-- /Contenido específico de la página -->
-  </div>  
+  </div>
 
 	<!-- Librerias -->
   	<script src="../lib/bootstrap/js/jquery.min.js"></script>

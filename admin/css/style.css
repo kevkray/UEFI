@@ -10,7 +10,6 @@ body {
 /** Para los enlaces **/
 
 a {
-    color: #EEEEEE;
     display: block;
 }
 
@@ -34,28 +33,21 @@ a:hover {
 
 /** Navbar **/
 
-.fondo-dropdown {
-    background: #394B59;
-    text-decoration: none;
-}
-
-nav.cabecera {
-    color: grey;
-    background: #1A2632;
-}
-
-nav.sidebar {
-    color: grey;
-    background: #394B59;
-}
-
 .wrapper {
     display: flex;
 }
 
+nav.cabecera {
+    background: #1A2632;
+}
+
+.nav-tabs a {
+    color: #EEEEEE;
+}
+
 ul.nav-tabs {
     background: #394B59;
-    width: 40%;
+    width: initial;
     min-height: -webkit-fill-available;
 }
 
@@ -96,4 +88,33 @@ form a {
 
 form .btn {
     border-radius: 0;
+}
+
+
+/** Inicio **/
+
+.buttonCursos {
+    background: #558A9C;
+}
+
+.buttonDiplomados {
+    background: #D0BA95;
+}
+
+.buttonConvenios {
+    background: #1A2632;
+}
+
+.buttonInscripciones {
+    background: #27C183;
+}
+
+.buttonIndex i {
+    color: #EEEEEE;
+    font-size: 50px;
+}
+
+.buttonIndex i:hover {
+    color: rgb(171, 161, 212);
+    ;
 }
