@@ -135,7 +135,7 @@
 							<p class="text-secondary">Descripción corta</p>
 							<p class="text-center">Quo tempora possimus consequatur voluptate ipsa esse, atque sapiente sit amet aut earum provident accusantium sequi placeat quas deleniti numquam quaerat similique.</p>
 							<p>Estado</p>
-							<p class="text-secondary"><center><a href="../page/Programa_Especifico.php" class="btn btn-primary">Inscribirse</a></center></p>
+							<p class="text-secondary"><center><a href="../page/inscripcion.php" class="btn btn-primary">Inscribirse</a></center></p>
 							<p class="text-secondary"><center><a href="../page/Programa_Especifico.php" class="btn btn-primary">Ver más</a></center></p>
 						</div>
 					</div>
