@@ -96,7 +96,7 @@
     <!-- /Barra lateral de navegación -->
     <!-- Contenido específico de la página -->
     <div class="container">
-      <div class="row">
+      <div class="row d-flex justify-content-center">
         <div class="col">
           <button type="button" class="btn btn-primary btn-lg">Consultar Cursos</button>
          <button type="button" class="btn btn-secondary btn-lg">Consultar Diplomados</button>
