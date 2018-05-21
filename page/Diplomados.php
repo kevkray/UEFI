@@ -14,6 +14,10 @@
 </head>
 <body>
 
+<!--Código de consultas a la BD-->
+<?php include '../funciones/FuncionesDiplomados.php';?>
+<!--Código de consultas a la BD-->
+
 	<section id="inicio" class="sticky-top">
 	<!-- Header -->
 		<?php include("../section/header.php"); ?>
@@ -85,162 +89,21 @@
 			<!-- Diplomados en programación -->
 			<div role="tabpanel" class="tab-pane in active" id="Programacion">
 				<div class="row">
-					<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-7.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 1</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="javascript:void( window.open( 'https://form.jotformz.com/81195077355664', 'blank', 'scrollbars=yes, toolbar=no, width=900, height=700' ))" class="btn btn-primary">Pre-inscripciones</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
-					<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-6.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 2</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
-					<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-7.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 1</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
-					<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-7.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 1</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
-					<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-7.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 1</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
-					<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-7.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 1</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
-					<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-7.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 1</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
-					<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-7.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 1</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
+					<?php mostrarDiplomados(obtenerDiplomados(),"programacion");?>
 				</div>
 			</div>
 			<!-- /Diplomados en programación -->
 			<!-- Diplomados en inscripción -->
 			<div role="tabpanel" class="tab-pane fade" id="Inscripcion">
 				<div class="row">
-				<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-6.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 1</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
-					<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-7.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 2</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
+					<?php mostrarDiplomados(obtenerDiplomados(),"inscripcion");?>
 				</div>
 			</div>
 			<!-- /Diplomados en inscripción -->
 			<!-- Diplomados en progreso -->
 			<div role="tabpanel" class="tab-pane fade" id="Dictando">
 				<div class="row">
-				<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-7.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 1</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
-					<div class="col-lg-3 col-sm-3 ">
-						<!-- Thumbnails container -->
-						<div class="thumbnail">
-							<img src="../img/portfolio-6.jpg" width=100% alt="">
-							<div class="caption">
-								<h3 class="text-secondary">Curso 2</h3>
-								<p class="text-secondary">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p class="text-secondary"><a href="../page/Programa_Especifico.php" class="btn btn-primary">Action</a></p>
-							</div>
-						</div>
-						<!-- /Thumbnails container -->
-					</div>
+					<?php mostrarDiplomados(obtenerDiplomados(),"dictando");?>
 				</div>
 			</div>
 			<!-- /Diplomados en progreso -->
