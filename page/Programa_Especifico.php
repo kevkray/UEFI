@@ -13,6 +13,9 @@
 	<!-- /Hojas de estilo -->
 </head>
 <body>
+	<!--Código de consultas a la BD-->
+	<?php include '../funciones/FuncionesProgramaEspecifico.php';?>
+	<!--Código de consultas a la BD-->
 
 	<section id="inicio" class="sticky-top">
 	<!-- Header -->

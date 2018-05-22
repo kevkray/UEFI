@@ -21,7 +21,9 @@
 
 	<section id="inicio" class="sticky-top">
 	<!-- Header -->
-		<?php include("../section/header.php"); ?>
+		<?php include("../section/header.php");
+			consultarCursos();
+		?>
 	<!-- /Header -->
 	<!-- Navbar General -->
 	<div class="row nav-general">
@@ -90,7 +92,7 @@
 			<!-- Cursos en programación -->
 			<div role="tabpanel" class="tab-pane in active" id="Programacion">
 				<div class="row">
-					<?php mostrarCursos(obtenerCursos(),"programacion");?>
+					<?php mostrarCursos("programacion");?>
 				</div>
 			</div>
 			<!-- /Cursos en programación -->
@@ -98,14 +100,14 @@
 			<!-- Cursos en inscripción -->
 			<div role="tabpanel" class="tab-pane fade" id="Inscripcion">
 				<div class="row">
-					<?php mostrarCursos(obtenerCursos(),"inscripcion");?>
+					<?php mostrarCursos("inscripcion");?>
 				</div>
 			</div>
 			<!-- /Cursos en inscripción -->
 			<!-- Cursos en dictando -->
 			<div role="tabpanel" class="tab-pane fade" id="Dictando">
 				<div class="row">
-					<?php mostrarCursos(obtenerCursos(),"dictando");?>
+					<?php mostrarCursos("dictando");?>
 				</div>
 			</div>
 			<!-- /Cursos en progreso -->

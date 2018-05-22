@@ -89,21 +89,21 @@
 			<!-- Diplomados en programación -->
 			<div role="tabpanel" class="tab-pane in active" id="Programacion">
 				<div class="row">
-					<?php mostrarDiplomados(obtenerDiplomados(),"programacion");?>
+					<?php mostrarDiplomados("programacion");?>
 				</div>
 			</div>
 			<!-- /Diplomados en programación -->
 			<!-- Diplomados en inscripción -->
 			<div role="tabpanel" class="tab-pane fade" id="Inscripcion">
 				<div class="row">
-					<?php mostrarDiplomados(obtenerDiplomados(),"inscripcion");?>
+					<?php mostrarDiplomados("inscripcion");?>
 				</div>
 			</div>
 			<!-- /Diplomados en inscripción -->
 			<!-- Diplomados en progreso -->
 			<div role="tabpanel" class="tab-pane fade" id="Dictando">
 				<div class="row">
-					<?php mostrarDiplomados(obtenerDiplomados(),"dictando");?>
+					<?php mostrarDiplomados("dictando");?>
 				</div>
 			</div>
 			<!-- /Diplomados en progreso -->
