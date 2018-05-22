@@ -23,7 +23,13 @@
 							echo "<div class=\"caption\">";
 								echo "<h3 class=\"text-secondary\">$nombrecurso</h3>";
 								echo "<p class=\"text-secondary\">$descurso</p>";
-								echo "<p class=\"text-secondary\"><a href=\"../page/Programa_Especifico.php\" name=$idcurso method=\"post\" class=\"btn btn-primary\">Más Información</a></p>";
+								echo "<p class=\"text-secondary\">";
+									echo "<form action=\"Programa_Especifico.php\" method=\"post\">";
+										echo "<button class=\"btn btn-primary\" name=$idcurso>";
+											echo "Más información";
+										echo "</button>";
+									echo "</form>";
+								echo "</p>";
 							echo "</div>";
 						echo "</div>";
 						//<!-- /Thumbnails container -->
