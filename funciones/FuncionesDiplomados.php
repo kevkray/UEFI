@@ -23,12 +23,16 @@
 							echo "<div class=\"caption\">";
 								echo "<h3 class=\"text-secondary\">$nombrediplomado</h3>";
 								echo "<p class=\"text-secondary\">$desdiplomado</p>";
-								echo "<p class=\"text-secondary\"><a href=\"../page/Programa_Especifico.php\" name=$idcurso method=\"post\" class=\"btn btn-primary\">Más Información</a></p>";
-								echo "<p class=\"text-secondary\"><a href=\"../page/Programa_Especifico.php\" name=$iddiplomado method=\"post\" class=\"btn btn-primary\">Más Información</a></p>";
+								echo "<p class=\"text-secondary\">";
+									echo "<form action=\"Programa_Especifico.php\" method=\"post\">";
+										echo "<button class=\"btn btn-primary\" name=$iddiplomado>";
+											echo "Más información";
+										echo "</button>";
+									echo "</form>";
+								echo "</p>";
 							echo "</div>";
 						echo "</div>";
 						//<!-- /Thumbnails container -->
-					echo "</div>";
 				}
 			}
 			else{
