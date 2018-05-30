@@ -110,6 +110,7 @@
 		</div>
 		<!-- /Tab panes -->
 	</div>
+	</div>
 
 	<!--Pie de página-->
 	<?php include("../section/footer.php"); ?>

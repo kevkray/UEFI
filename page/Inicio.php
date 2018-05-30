@@ -104,16 +104,16 @@
 				<!-- The slideshow -->
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="../img/client-1.jpg" class="img-fluid rounded mx-auto d-block" alt="Los Angeles">
+						<img src="../img/fotosUEFI/fotoUEFI (7).jpg" class="img-fluid rounded mx-auto d-block" alt="Sala UEFI">
 					</div>
 					<div class="carousel-item">
-						<img src="../img/client-2.jpg" class="img-fluid rounded mx-auto d-block" alt="Chicago">
+						<img src="../img/fotosUEFI/fotoUEFI (8).jpg" class="img-fluid rounded mx-auto d-block" alt="Sala UEFI">
 					</div>
 					<div class="carousel-item">
-						<img src="../img/imagen.jpg" class="img-fluid rounded mx-auto d-block" alt="New York">
+						<img src="../img/fotosUEFI/fotoUEFI (9).jpg" class="img-fluid rounded mx-auto d-block" alt="Sala UEFI">
 					</div>
 					<div class="carousel-item">
-						<img src="../img/client-2.jpg" class="img-fluid rounded mx-auto d-block" alt="Chicago">
+						<img src="../img/fotosUEFI/fotoUEFI (1).jpg" class="img-fluid rounded mx-auto d-block" alt="Sala UEFI">
 					</div>
 				</div>
 				<!-- /The slideshow -->
