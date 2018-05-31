@@ -11,15 +11,20 @@
 	<nav class="col navbar navbar-expand-md nav-principal">
 		<!-- Navbar links -->
 		<div class="navbar-collapse">
-			<ul class="navbar-nav ml-auto pr-5 font-weight-bold">
-				<li class="nav-item pr-2">
-					<i class="fa fa-phone"> (+57 1) 3239300 Ext. 1709 | </i>
+			<ul class="navbar-nav mr-auto pr-5 font-weight-bold">
+				<li>
+					<i>Unidad de Extensión Facultad de ingeniería</i>
 				</li>
-				<li class="nav-item">
-					<i class="fa fa-compass"> Cra 8 No. 40 - 78 Edificio Alejadro Suarez Copete, Piso 3</i>
-				</li>  
 			</ul>
-		</div> 
+			<ul class="navbar-nav ml-auto pr-5 font-weight-bold">
+				<div class="ml-auto">
+					<li class="nav-item pr-2">
+						<i class="fa fa-phone"> (+57 1) 3239300 Ext. 1709 | </i>
+						<i class="fa fa-compass"> Cra 8 No. 40 - 78 Edificio Alejadro Suarez Copete, Piso 3</i>
+					</li>
+				</div>
+			</ul>
+		</div>
 		<!-- /Navbar links -->
 	</nav>
 	<!-- /Navbar Principal -->
