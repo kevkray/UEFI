@@ -72,83 +72,83 @@
 	<div class="container">
 		<h3 class="section-title text-center">Formulario de Inscripción</h3>
         <div class="section-title-divider"></div>
-			<form>
+			<form method="post" action="../funciones/FuncionInscripcionPersona.php">
 				<div class="form-group row">
 					<label for="inputnombre" class="col-2 col-form-label">Nombre</label>
 					<div class="col-10">
-						<input class="form-control" type="text" value="" placeholder="Nombre" id="inputnombre" required oninvalid="setCustomValidity('El nombre es obligatorio')" 
+						<input class="form-control" type="text" value="" placeholder="Nombre" id="inputnombre" name="nombre" required oninvalid="setCustomValidity('El nombre es obligatorio')" 
 						oninput="setCustomValidity('')" maxlength="99" minlength="3">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputapellido" class="col-2 col-form-label" >Apellido</label>
 					<div class="col-10">
-						<input class="form-control" type="text" value="" placeholder="Apellido" id="inputapellido" required oninvalid="setCustomValidity('El apellido es obligatorio')" 
+						<input class="form-control" type="text" value="" placeholder="Apellido" id="inputapellido" name="apellido" required oninvalid="setCustomValidity('El apellido es obligatorio')" 
 						oninput="setCustomValidity('')" maxlength="99" minlength="3">
 					</div>
 				</div> 
 				<div class="form-group row">
 					<label for="selectdocumento"class="col-2 col-form-label">Tipo de documento</label>
 					<div class="col-10">
-						<select class="form-control" id="selectdocumento" required oninvalid="setCustomValidity('El documento de identificación es obligatorio')" 
+						<select class="form-control" id="selectdocumento" name="tipoDocumento" required oninvalid="setCustomValidity('El documento de identificación es obligatorio')" 
 						oninput="setCustomValidity('')">
 						<option>Cédula</option>
 						<option>Tarjeta de Identidad</option>
-						<option>Cédula de Extrangería</option>
+						<option>Cédula de Extranjería</option>
 						</select>
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputnumerodocumento" class="col-2 col-form-label">Número documento</label>
 					<div class="col-10">
-						<input class="form-control" type="number" value="" placeholder="10223548593" id="inputnumerodocumento" pattern="[0-9]" required oninvalid="setCustomValidity('El número del documento de identificación es obligatorio')" 
+						<input class="form-control" type="number" value="" placeholder="10223548593" id="inputnumerodocumento" name="numeroDocumento" pattern="[0-9]" required oninvalid="setCustomValidity('El número del documento de identificación es obligatorio')" 
 						oninput="setCustomValidity('')"maxlength="19" minlength="4">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputlugarinscrip" class="col-2 col-form-label">Lugar de Inscripción</label>
 					<div class="col-10">
-						<input class="form-control" type="text" value="" placeholder="Lugar de Inscripción del documento de identificación" id="inputlugarinscrip" required oninvalid="setCustomValidity('El lugar de inscripción del documento de identificación es obligatorio')" 
+						<input class="form-control" type="text" value="" placeholder="Lugar de Inscripción del documento de identificación" id="inputlugarinscrip"  name="lugarExpedicion" required oninvalid="setCustomValidity('El lugar de inscripción del documento de identificación es obligatorio')" 
 						oninput="setCustomValidity('')" maxlength="149" minlength="3">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputfechanacimiento" class="col-2 col-form-label">Fecha de nacimiento</label>
 					<div class="col-10">
-						<input class="form-control" type="date" value="" id="inputfechanacimiento" required oninvalid="setCustomValidity('La fecha de nacimiento es obligatoria')" 
+						<input class="form-control" type="date" value="" id="inputfechanacimiento" name="fechaNacimiento" required oninvalid="setCustomValidity('La fecha de nacimiento es obligatoria')" 
 						oninput="setCustomValidity('')" >
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputlugarnacimiento" class="col-2 col-form-label">Lugar de nacimiento</label>
 					<div class="col-10">
-						<input class="form-control" type="text" value="" placeholder="Lugar de nacimiento" id="inputlugarnacimiento" required oninvalid="setCustomValidity('El lugar de inscripción del documento de nacimiento es obligatorio')" 
+						<input class="form-control" type="text" value="" placeholder="Lugar de nacimiento" id="inputlugarnacimiento" name="lugarNacimiento" required oninvalid="setCustomValidity('El lugar de inscripción del documento de nacimiento es obligatorio')" 
 						oninput="setCustomValidity('')" maxlength="149" minlength="3">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputdireccionhogar" class="col-2 col-form-label">Dirección Hogar</label>
 					<div class="col-10">
-						<input class="form-control" type="text" value="" placeholder="Dirección del Hogar" id="inputdireccionhogar" required oninvalid="setCustomValidity('La dirección de residencia es obligatoria')" 
+						<input class="form-control" type="text" value="" placeholder="Dirección del Hogar" id="inputdireccionhogar" name="direccionHogar" required oninvalid="setCustomValidity('La dirección de residencia es obligatoria')" 
 						oninput="setCustomValidity('')" maxlength="149" minlength="8">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputdireccionoficina" class="col-2 col-form-label">Dirección Oficina</label>
 					<div class="col-10">
-						<input class="form-control" type="text" value="" placeholder="Dirección de oficina o correspondencia" id="inputdireccionoficina" maxlength="149">
+						<input class="form-control" type="text" value="" placeholder="Dirección de oficina o correspondencia" id="inputdireccionoficina" name="direccionOficina" maxlength="149">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputtelhogar" class="col-2 col-form-label">Telefono Hogar</label>
 					<div class="col-10">
-						<input class="form-control" type="number" value="" placeholder="9999999" id="inputtelhogar"pattern="[0-9]" maxlength="11">
+						<input class="form-control" type="number" value="" placeholder="9999999" id="inputtelhogar" name="telefonaHogar" pattern="[0-9]" maxlength="11">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputteloficina" class="col-2 col-form-label">Telefono Oficina</label>
 					<div class="col-10">
-						<input class="form-control" type="number" value="" placeholder="7777777" id="inputteloficina" pattern="[0-9]" maxlength="11">
+						<input class="form-control" type="number" value="" placeholder="7777777" id="inputteloficina" name="nombre" pattern="[0-9]" maxlength="11">
 					</div>
 				</div>
 				<div class="form-group row">

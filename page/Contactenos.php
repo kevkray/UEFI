@@ -97,7 +97,7 @@
 					medina@udistrital.edu.co<br><br>
 
 					Asistente encargado<br>
-					Oscar Leonardo Celis Granados<br><br>
+					Oscar Leonardo Cely Granados<br><br>
 
 					Correo de la Unidad de Extensión<br>
 					unidad-extension-ing@udistrital.edu.co <br><br>
