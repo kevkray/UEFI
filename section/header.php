@@ -20,9 +20,14 @@
 				<div class="ml-auto">
 					<li class="nav-item pr-2">
 						<i class="fa fa-phone"> (+57 1) 3239300 Ext. 1709 | </i>
-						<i class="fa fa-compass"> Cra 8 No. 40 - 78 Edificio Alejadro Suarez Copete, Piso 3</i>
+						<i class="fa fa-compass"> Cra 8 No. 40 - 78 Edificio Alejadro Suarez Copete, Piso 3 | </i>
 					</li>
 				</div>
+			</ul>
+			<ul class="navbar-nav pr-5 font-weight-bold">
+				<li class="nav-item pr-2">
+					<a 	href="../admin/loginAdmin.php">Acceder</a>
+				</li>
 			</ul>
 		</div>
 		<!-- /Navbar links -->

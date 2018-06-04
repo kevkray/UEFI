@@ -6,7 +6,6 @@ body {
     text-decoration: none;
 }
 
-
 /** Para los enlaces **/
 
 a {
@@ -55,7 +54,7 @@ ul.nav-tabs {
     font-size: x-large;
 }
 
-.nav-item a:hover {
+.wrapper .nav-item a:hover {
     background: #2E3A46;
     color: #EEEEEE;
 }

@@ -30,7 +30,7 @@
       Author URL: https://bootstrapmade.com
     ======================================================= -->
 </head>
-<body class="login-img3-body">
+<body>
 
 	<section id="inicio" class="sticky-top">
 	<!-- Header -->

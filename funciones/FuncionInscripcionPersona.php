@@ -1,8 +1,8 @@
 <?php
 		function obtenerCategorias(){
-			$conexion=mysqli_connect("localhost","prepagap_root","camilobasededatos","prepagap_prepagapp") or
-    		die("Problemas con la conexión");
-        	$registros=mysqli_query($conexion,"select nombrecaracteristica from caracteristicas") or die("Problemas en el select:".mysqli_error($conexion));
+			$conexion=Conexion::getInstance();
+			$consulta = "select yearconvenio from convenios group by yearconvenio";
+			$registros = $conexion->obtener($consulta);
         	$numeroRegistros = mysqli_num_rows($registros);
 			if ($numeroRegistros!=0) {
 				while ($reg=mysqli_fetch_array($registros)) {
