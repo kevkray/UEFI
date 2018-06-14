@@ -74,7 +74,7 @@
 			<!-- Noticias más relevantes -->
 			<div class="col-md-4">
 				<figure class="imghvr-fold-up">
-					<img src="../img/Prueba1.jpg" class="img-responsive">
+					<img src="../img/fotosUEFI/fotoUEFI (8).jpg" class="img-responsive">
 					<figcaption>
 						<h3>Course Name</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
@@ -82,7 +82,7 @@
 					<a href="#"></a>
 				</figure>
 				<figure class="imghvr-fold-up">
-					<img src="../img/Prueba1.jpg" class="img-responsive">
+					<img src="../img/fotosUEFI/fotoUEFI (10).jpg" class="img-responsive">
 					<figcaption>
 						<h3>Course Name</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
@@ -104,7 +104,7 @@
 				<!-- The slideshow -->
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="../img/fotosUEFI/fotoUEFI (7).jpg" class="img-fluid rounded mx-auto d-block" alt="Sala UEFI">
+						<img src="../img/Banners/banner1.png" class="img-fluid rounded mx-auto d-block" alt="Sala UEFI">
 					</div>
 					<div class="carousel-item">
 						<img src="../img/fotosUEFI/fotoUEFI (8).jpg" class="img-fluid rounded mx-auto d-block" alt="Sala UEFI">

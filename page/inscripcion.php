@@ -74,6 +74,41 @@
         <div class="section-title-divider"></div>
 			<form method="post" action="../funciones/FuncionInscripcionPersona.php">
 				<div class="form-group row">
+					<label for="inputnombre" class="col-2 col-form-label">Programa Academico</label>
+					<div class="col-10">
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="radioprogaca" id="radioCurso" value="curso" checked>
+							<label class="form-check-label" for="radioCurso">
+								Curso
+							</label>
+						</div>
+						<div class="form-check">
+						<input class="form-check-input" type="radio" name="radioprogaca" id="radioDiplomado" value="diplomado">
+							<label class="form-check-label" for="radioDiplomado">
+								Diplomado
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="selectNombreProgAca"class="col-2 col-form-label">Nombre Programa Academico</label>
+					<div class="col-10">
+						<select class="form-control" id="selectNombreProgAca" name="NombreProgAca" required oninvalid="setCustomValidity('Seleccione un Programa Academico')" 
+						oninput="setCustomValidity('')">
+							<?php 
+							$tipoProgAca=$_POST['radioprogaca'];
+							if($tipoProgAca="curso"){
+								mostrarnombreprogaca('1');
+							}else{
+								mostrarnombreprogaca('2');
+							}
+							?>
+						</select>
+					</div>
+				</div>
+			</form>
+			<form method="post" action="../funciones/FuncionInscripcionPersona.php">
+				<div class="form-group row">
 					<label for="inputnombre" class="col-2 col-form-label">Nombre</label>
 					<div class="col-10">
 						<input class="form-control" type="text" value="" placeholder="Nombre" id="inputnombre" name="nombre" required oninvalid="setCustomValidity('El nombre es obligatorio')" 

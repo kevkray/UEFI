@@ -73,14 +73,16 @@
     <div class="row pt-5">
       <!-- Imágenes de UEFI -->
       <div class="col-md-6 sliderUEFI">
-        <div><img src="../img/course01.jpg" alt="" class="img-fluid"></div>
-        <div><img src="../img/course02.jpg" alt="" class="img-fluid"></div>
-        <div><img src="../img/course03.jpg" alt="" class="img-fluid"></div>
-        <div><img src="../img/course04.jpg" alt="" class="img-fluid"></div>
-        <div><img src="../img/course05.jpg" alt="" class="img-fluid"></div>
-        <div><img src="../img/course06.jpg" alt="" class="img-fluid"></div>
-        <div><img src="../img/course07.jpg" alt="" class="img-fluid"></div>
-        <div><img src="../img/course08.jpg" alt="" class="img-fluid"></div>
+        <div><img src="../img/fotosUEFI/fotoUEFI (1).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../img/fotosUEFI/fotoUEFI (2).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../img/fotosUEFI/fotoUEFI (3).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../img/fotosUEFI/fotoUEFI (6).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../img/fotosUEFI/fotoUEFI (5).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../img/fotosUEFI/fotoUEFI (7).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../img/fotosUEFI/fotoUEFI (8).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../img/fotosUEFI/fotoUEFI (9).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../img/fotosUEFI/fotoUEFI (10).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../img/fotosUEFI/fotoUEFI (11).jpg" alt="Sala UEFI" class="img-fluid"></div>
       </div>
       <!-- /Imágenes de UEFI -->
       <!-- ¿Quiénes somos? -->
