@@ -1,36 +1,35 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Inscripción</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<!-- Hojas de estilo -->
-	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../lib/imagehover/css/imagehover.min.css">
-	<link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../lib/animate/css/animate.min.css" >
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<!-- /Hojas de estilo -->
+<script type="text/javascript">
+<?php
+include '../funciones/FuncionInscripcionPersona.php';
+?>
+function activar(obj) {
+  frm = document.forms[0];
+  for (i=0; ele = frm.getElementsByTagName('select')[i]; i++)
+    ele.style.display = (ele==frm[obj]) ? 'block' : 'none';
+}
+</script>
 </head>
 <body>
+<form>
 
-<form method="post" action="funcion1">
-  <input type="radio" name="gender" value="male" > Male<br>
-  <input type="radio" name="gender" value="female"checked> Female<br>
-  <input type="radio" name="gender" value="other"> Other
-
-  <button type="button" name="boton">Click Me!</button>
-</form>
-
+<input type="radio" name="rad" onclick="activar('pc')" checked="checked" />
+<input type="radio" name="rad" onclick="activar('disco')" />
+<select name="pc" style="display:block">
 <?php
-function funcion1(){
-echo "cugfdgs";
-}
-
-$valor = $_POST['gender']; 
-echo $valor; 
-
+	mostrarnombreprogaca("1");
 ?>
+</select>
+<select name="disco" style="display:none">
+<?php
+	mostrarnombreprogaca("2");
+?>
+</select>
+</form>
+</body>
+</html>  
+
 
 	<!-- Librerias -->
   	<script src="../lib/bootstrap/js/jquery.min.js"></script>

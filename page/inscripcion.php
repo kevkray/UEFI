@@ -11,6 +11,17 @@
 	<link rel="stylesheet" type="text/css" href="../lib/animate/css/animate.min.css" >
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<!-- /Hojas de estilo -->
+
+	<script type="text/javascript">
+		<?php
+		include '../funciones/FuncionInscripcionPersona.php';
+		?>
+		function activar(obj) {
+		frm = document.forms[0];
+		for (i=0; ele = frm.getElementsByClassName('selectprogaca')[i]; i++)
+			ele.style.display = (ele==frm[obj]) ? 'block' : 'none';
+		}
+	</script>
 </head>
 <body>
 
@@ -77,13 +88,13 @@
 					<label for="inputnombre" class="col-2 col-form-label">Programa Academico</label>
 					<div class="col-10">
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="radioprogaca" id="radioCurso" value="curso" checked>
+						<input class="form-check-input" type="radio" name="radioprogaca" id="radioCurso" value="curso" onclick="activar('selectcurso')" checked>
 							<label class="form-check-label" for="radioCurso">
 								Curso
 							</label>
 						</div>
 						<div class="form-check">
-						<input class="form-check-input" type="radio" name="radioprogaca" id="radioDiplomado" value="diplomado">
+						<input class="form-check-input" type="radio" name="radioprogaca" id="radioDiplomado" onclick="activar('selectdiplomado')" value="diplomado">
 							<label class="form-check-label" for="radioDiplomado">
 								Diplomado
 							</label>
@@ -94,28 +105,18 @@
 				<div class="form-group row">
 					<label for="selectNombreProgAca"class="col-2 col-form-label">Nombre Programa Academico</label>
 					<div class="col-10">
-					<?php
-							
-							if(isset($_POST["curso"])){
-								echo "INICIO CODIGO"; 
-								
-							}else{
-								echo "fin codigo";
-							}
-							?>	
-						<select class="form-control" id="selectNombreProgAca" name="NombreProgAca" required oninvalid="setCustomValidity('Seleccione un Programa Academico')" 
+						<select class="form-control selectprogaca" id="selectNombreProgAca" name="selectcurso" style="display:block" required oninvalid="setCustomValidity('Seleccione un Programa Academico')" 
 						oninput="setCustomValidity('')">
 						
-							<?php
-							echo "INICIO CODIGO"; 
-							$tipoProgAca=$_POST['radioprogaca'];
-							echo $tipoProgAca;
-							if($tipoProgAca="curso"){
-								mostrarnombreprogaca('1');
-							}else{
-								mostrarnombreprogaca('2');
-							}
-							?>
+						<?php
+							mostrarnombreprogaca("1");
+						?>
+						</select>
+						<select class="form-control selectprogaca" id="selectNombreProgAca" name="selectdiplomado" style="display:none" required oninvalid="setCustomValidity('Seleccione un Programa Academico')" 
+						oninput="setCustomValidity('')">
+						<?php
+							mostrarnombreprogaca("2");
+						?>
 						</select>
 					</div>
 				</div>
@@ -133,6 +134,7 @@
 						oninput="setCustomValidity('')" maxlength="99" minlength="3">
 					</div>
 				</div> 
+
 				<div class="form-group row">
 					<label for="selectdocumento"class="col-2 col-form-label">Tipo de documento</label>
 					<div class="col-10">
