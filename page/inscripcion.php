@@ -90,13 +90,26 @@
 						</div>
 					</div>
 				</div>
+				
 				<div class="form-group row">
 					<label for="selectNombreProgAca"class="col-2 col-form-label">Nombre Programa Academico</label>
 					<div class="col-10">
+					<?php
+							
+							if(isset($_POST["curso"])){
+								echo "INICIO CODIGO"; 
+								
+							}else{
+								echo "fin codigo";
+							}
+							?>	
 						<select class="form-control" id="selectNombreProgAca" name="NombreProgAca" required oninvalid="setCustomValidity('Seleccione un Programa Academico')" 
 						oninput="setCustomValidity('')">
-							<?php 
+						
+							<?php
+							echo "INICIO CODIGO"; 
 							$tipoProgAca=$_POST['radioprogaca'];
+							echo $tipoProgAca;
 							if($tipoProgAca="curso"){
 								mostrarnombreprogaca('1');
 							}else{
@@ -106,8 +119,6 @@
 						</select>
 					</div>
 				</div>
-			</form>
-			<form method="post" action="../funciones/FuncionInscripcionPersona.php">
 				<div class="form-group row">
 					<label for="inputnombre" class="col-2 col-form-label">Nombre</label>
 					<div class="col-10">
