@@ -14,22 +14,25 @@
 </head>
 <body>
 
-<form method="post" action="funcion1">
-  <input type="radio" name="gender" value="male" > Male<br>
-  <input type="radio" name="gender" value="female"checked> Female<br>
-  <input type="radio" name="gender" value="other"> Other
+<script type="text/javascript">
+function funcion(){
+	
+}
+</script>
 
-  <button type="button" name="boton">Click Me!</button>
+<form method="post" action="inscripcion.2.php">
+  <input type="radio" name="gender" value="male" onclick = "funcion();"> Male<br>
+  <input type="radio" name="gender" value="female"checked onclick = "funcion();"> Female<br>
+  <input type="radio" name="gender" value="other" onclick = "funcion();"> Other
+
+  <button name="boton">Click Me!</button>
 </form>
 
+
 <?php
-function funcion1(){
-echo "cugfdgs";
+function funcion(){
+	echo "Entra";
 }
-
-$valor = $_POST['gender']; 
-echo $valor; 
-
 ?>
 
 	<!-- Librerias -->
