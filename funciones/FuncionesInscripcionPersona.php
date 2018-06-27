@@ -1,11 +1,95 @@
 <?php
-if (isset($_POST["login"])) {
-			if (!empty($_POST['nombre']) && !empty($_POST['descripcion']) && !empty($_POST['precio']) && !empty($_POST['telefono']) && !empty($_POST['nickname']) && !empty($_POST['contrasena'])) {
-				$nickname = $_POST['nickname'];
-				$consulta=mysqli_query($conexion, "select * from puta where nicknameputa='".$nickname."'");
-				$existe = mysqli_num_rows($consulta);		
-				if ($existe ==0) {
-					$carpeta = 'img/portfolio/'.$_POST['nickname'];
+		include '../consultas/conexion.php';
+		function mostrarnombreprogaca($tipoProgAca){
+			$conexion=Conexion::getInstance();
+			$consulta = "select idprogramaacademico, nomprogramaacademico from programaacademico where idtipoprogramaacademico=\"$tipoProgAca\"";
+			$registros = $conexion->obtener($consulta);
+			$numeroRegistros = mysqli_num_rows($registros);
+			if ($numeroRegistros!=0) {
+				while ($reg=mysqli_fetch_assoc($registros)){
+					$idcurso = $reg['idprogramaacademico'];
+					$nombrecurso = $reg['nomprogramaacademico'];
+					echo "<option value=\"$idcurso$|$|$$nombrecurso\">$nombrecurso</option>";
+				}
+			}
+			else{
+				$mensajeCursos = "No hay cursos actualmente";
+				echo "<h3 class=\"text-center text-muted\">".$mensajeCursos."</h3>";
+			}
+		}
+		function realizarInscripcion(){
+			$idformapago = "1";//Debido a que solo hay pago físico, cambia cuando se agregue la funcionalidad de pago electrónico
+			$temp = $_POST[$_POST['radioprogaca']];
+			$idprogacademico = explode("$|$|$",$temp);
+			echo $idprogacademico[0];
+			echo "<br>";
+			echo $idprogacademico[1];
+			echo "<br>";
+			date_default_timezone_set("America/Bogota");
+			$horainscripcion = date('G:i:s');
+			echo $horainscripcion;
+			echo "<br>";
+			$fechahorainscripcion=date("Y-m-d");
+			echo $fechahorainscripcion;
+			echo "<br>";
+			$nombreinscrito = $_POST['nombre'];
+			echo $nombreinscrito;
+			echo "<br>";
+			$apellidoinscrito = $_POST['apellido'];
+			echo $apellidoinscrito;
+			echo "<br>";
+			$temp = $_POST['tipoDocumento'];
+			$idtipodocumento = explode("$|$|$",$temp);
+			echo $idtipodocumento[0];
+			echo "<br>";
+			echo $idtipodocumento[1];
+			echo "<br>";
+			$numerodocumento = $_POST['numeroDocumento'];
+			echo $numerodocumento;
+			echo "<br>";
+			$lugarexpedicion = $_POST['lugarExpedicion'];
+			echo $lugarexpedicion;
+			echo "<br>";
+			$fechaNacimiento = $_POST['fechaNacimiento'];
+			echo $fechaNacimiento;
+			echo "<br>";
+			$lugarnacimiento = $_POST['lugarNacimiento'];
+			echo $lugarnacimiento;
+			echo "<br>";
+			$direccionhogar = $_POST['direccionHogar'];
+			echo $direccionhogar;
+			echo "<br>";
+			$direccionoficina = $_POST['direccionOficina'];
+			echo $direccionoficina;
+			echo "<br>";
+			$telefonohogar = $_POST['telefonoHogar'];
+			echo $telefonohogar;
+			echo "<br>";
+			$telefonooficina = $_POST['inputteloficina'];
+			echo $telefonooficina;
+			echo "<br>";
+			$telefonocelular = $_POST['inputtelcelular'];
+			echo $telefonocelular;
+			echo "<br>";
+			$email = $_POST['inputemail'];
+			echo $email;
+			echo "<br>";
+			$profesion = $_POST['profesion'];
+			echo $profesion;
+			echo "<br>";
+
+			$dirfotoinscrito = $_POST['numeroDocumento'];
+			$dirhojavida = $_POST['numeroDocumento'];
+			$dirfotocedula = $_POST['numeroDocumento'];
+			$dirfotocarneseguro = $_POST['numeroDocumento'];
+			$dirfotoconsignacion = $_POST['numeroDocumento'];
+
+			$conexion=Conexion::getInstance();
+			$consulta = "select numerodocumento from personainscrita where numerodocumento=\"$numerodocumento\",idprogramaacademico=\"$idprogacademico\",idtipodocumento=\"$idtipodocumento\"";
+			$registros = $conexion->obtener($consulta);
+			$existe = mysqli_num_rows($registros);	
+			if ($existe ==0) {
+				$carpeta = '../archivos/'.$idprogacademico[1];
 					if (!file_exists($carpeta)) {
 						mkdir($carpeta, 0777, true);
 					}
@@ -87,12 +171,9 @@ if (isset($_POST["login"])) {
 						echo "<br><br><br><br>";
 						echo $msg;
 					}	
-				}else{
-					$mensaje="el nickname ya existe, prueba con otro";
-				}
-				
-			}else{
-				$mensaje="todos los campos deben ser ingresados";
+			}
+			else{
+				$mensaje="el nickname ya existe, prueba con otro";
 			}
 		}
 ?>
