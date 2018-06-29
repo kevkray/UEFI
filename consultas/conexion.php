@@ -33,7 +33,6 @@
 		//Create
 		public function insertar($consulta){
 			$retorno = mysqli_query($this->link,$consulta) or die("Problemas en el insert into:".mysqli_error($this->link));
-			echo $retorno;
 			return $retorno;
 		}
 		//Read

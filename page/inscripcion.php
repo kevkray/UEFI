@@ -83,7 +83,7 @@
 	<div class="container">
 		<h3 class="section-title text-center">Formulario de Inscripción</h3>
         <div class="section-title-divider"></div>
-			<form method="post" action="../page/ComprobacionInscripcion.php">
+			<form method="post" action="../page/ComprobacionInscripcion.php" enctype="multipart/form-data">
 				<div class="form-group row">
 					<label for="inputnombre" class="col-2 col-form-label">Programa Academico</label>
 					<div class="col-10">
@@ -223,7 +223,7 @@
 				<div class="form-group row">
 					<label for="uploadfoto" class="col-2 col-form-label">Cargar foto 3X4</label>
 					<div class="col-10">
-						<input type="file" class="form-control-file" id="uploadfoto" aria-describedby="fileHelp" accept="image/jpg, imagen/png" oninvalid="setCustomValidity('La foto 3X4 es obligatoria')" 
+						<input type="file" class="form-control-file" name="fotocargada" id="uploadfoto" aria-describedby="fileHelp" accept="image/jpg, imagen/png" oninvalid="setCustomValidity('La foto 3X4 es obligatoria')" 
 						oninput="setCustomValidity('')" >
 						<small id="fileHelp" class="form-text text-muted">Cargar una foto de 3X4 fondo blanco o azul.</small>
 					</div>
@@ -231,7 +231,7 @@
 				<div class="form-group row">
 					<label for="uploadhojavida" class="col-2 col-form-label">Cargar hoja de vida</label>
 					<div class="col-10">
-						<input type="file" class="form-control-file" id="uploadhojavida" aria-describedby="fileHelp" accept="application/pdf" oninvalid="setCustomValidity('La hoja de vida es obligatoria')" 
+						<input type="file" class="form-control-file"name="hvcargada" id="uploadhojavida" aria-describedby="fileHelp" accept="application/pdf" oninvalid="setCustomValidity('La hoja de vida es obligatoria')" 
 						oninput="setCustomValidity('')">
 						<small id="fileHelp" class="form-text text-muted">Cargar un hoja de vida en formato pdf.</small>
 					</div>
@@ -239,7 +239,7 @@
 				<div class="form-group row">
 					<label for="uploadcedula" class="col-2 col-form-label">Cargar cédula</label>
 					<div class="col-10">
-						<input type="file" class="form-control-file" id="uploadcedula" aria-describedby="fileHelp" accept="image/jpg, imagen/png, application/pdf" oninvalid="setCustomValidity('El escaner de la cédula es obligatoria')" 
+						<input type="file" class="form-control-file" name="cedulacargada" id="uploadcedula" aria-describedby="fileHelp" accept="image/jpg, imagen/png, application/pdf" oninvalid="setCustomValidity('El escaner de la cédula es obligatoria')" 
 						oninput="setCustomValidity('')">
 						<small id="fileHelp" class="form-text text-muted">Cargar una foto png o jpg o achivo pdf con la cedula scaneada.</small>
 					</div>
@@ -247,7 +247,7 @@
 				<div class="form-group row">
 					<label for="uploadcarneseguro" class="col-2 col-form-label">Cargar carné seguro</label>
 					<div class="col-10">
-						<input type="file" class="form-control-file" id="uploadcarneseguro" aria-describedby="fileHelp" accept="image/jpg, imagen/png, application/pdf" oninvalid="setCustomValidity('El escaner del carné del seguro médico es obligatorio')" 
+						<input type="file" class="form-control-file" name="carnesegurocargado"id="uploadcarneseguro" aria-describedby="fileHelp" accept="image/jpg, imagen/png, application/pdf" oninvalid="setCustomValidity('El escaner del carné del seguro médico es obligatorio')" 
 						oninput="setCustomValidity('')">
 						<small id="fileHelp" class="form-text text-muted">Cargar una foto png o jpg o achivo pdf con el carné del seguro médico scaneado.</small>
 					</div>
@@ -255,7 +255,7 @@
 				<div class="form-group row">
 					<label for="uploadconsignacion" class="col-2 col-form-label">Cargar consignación</label>
 					<div class="col-10">
-						<input type="file" class="form-control-file" id="uploadconsignacion" aria-describedby="fileHelp" accept="image/jpg, imagen/png, application/pdf" oninvalid="setCustomValidity('El escaner del recibo de pago es obligatorio')" 
+						<input type="file" class="form-control-file" name="consignacioncargado"id="uploadconsignacion" aria-describedby="fileHelp" accept="image/jpg, imagen/png, application/pdf" oninvalid="setCustomValidity('El escaner del recibo de pago es obligatorio')" 
 						oninput="setCustomValidity('')">
 						<small id="fileHelp" class="form-text text-muted">Cargar una foto png o jpg o achivo pdf del recibo de pago del curso scaneado.(Se debe ver el timbre del Banco de Occidente)</small>
 					</div>

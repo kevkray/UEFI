@@ -16,7 +16,9 @@
 <body>
 	<section id="inicio" class="sticky-top">
 	<!-- Header -->
-		<?php include("../section/header.php");?>
+		<?php include("../section/header.php");
+			  include("../funciones/FuncionesInicio.php");
+		?>
 	<!-- /Header -->
 	<!-- Navbar General -->
 	<div class="row nav-general">
@@ -72,61 +74,15 @@
 		<!-- Noticias -->
 		<section id="Noticias" class="row justify-content-center pt-5">
 			<!-- Noticias más relevantes -->
-			<div class="col-md-4">
-				<figure class="imghvr-fold-up">
-					<img src="../img/fotosUEFI/fotoUEFI (8).jpg" class="img-responsive">
-					<figcaption>
-						<h3>Course Name</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-					</figcaption>
-					<a href="#"></a>
-				</figure>
-				<figure class="imghvr-fold-up">
-					<img src="../img/fotosUEFI/fotoUEFI (10).jpg" class="img-responsive">
-					<figcaption>
-						<h3>Course Name</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-					</figcaption>
-					<a href="#"></a>
-				</figure>
-			</div>
+			<?php
+			consultarImagenesProgramaAcademico();
+			?>
 			<!-- /Noticias más relevantes -->
-			<!-- Carrousel -->
-			<div id="news" class="col-md-8 carousel slide" data-ride="carousel">
-				<!-- Indicators -->
-				<ul class="carousel-indicators">
-					<li data-target="#news" data-slide-to="0" class="active"></li>
-					<li data-target="#news" data-slide-to="1"></li>
-					<li data-target="#news" data-slide-to="2"></li>
-					<li data-target="#news" data-slide-to="3"></li>
-				</ul>
-				<!-- /Indicators -->
-				<!-- The slideshow -->
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="../img/Banners/banner1.png" class="img-fluid rounded mx-auto d-block" alt="Sala UEFI">
-					</div>
-					<div class="carousel-item">
-						<img src="../img/fotosUEFI/fotoUEFI (8).jpg" class="img-fluid rounded mx-auto d-block" alt="Sala UEFI">
-					</div>
-					<div class="carousel-item">
-						<img src="../img/fotosUEFI/fotoUEFI (9).jpg" class="img-fluid rounded mx-auto d-block" alt="Sala UEFI">
-					</div>
-					<div class="carousel-item">
-						<img src="../img/fotosUEFI/fotoUEFI (1).jpg" class="img-fluid rounded mx-auto d-block" alt="Sala UEFI">
-					</div>
-				</div>
-				<!-- /The slideshow -->
-				<!-- Left and right controls -->
-				<a class="carousel-control-prev" href="#news" data-slide="prev">
-					<span class="carousel-control-prev-icon "></span>
-				</a>
-				<a class="carousel-control-next" href="#news" data-slide="next">
-					<span class="carousel-control-next-icon "></span>
-				</a>
-				<!-- /Left and right controls -->
-			</div>
-			<!-- /Carrousel -->
+			<!--Slider-->
+			<?php
+			consultarImagenesSlider();
+			?>
+			<!--/Slider-->
 		</section>
 		<!-- /Noticias -->
 		<!-- Portafolio -->

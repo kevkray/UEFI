@@ -9,171 +9,111 @@
 				while ($reg=mysqli_fetch_assoc($registros)){
 					$idcurso = $reg['idprogramaacademico'];
 					$nombrecurso = $reg['nomprogramaacademico'];
-					echo "<option value=\"$idcurso$|$|$$nombrecurso\">$nombrecurso</option>";
 				}
 			}
 			else{
 				$mensajeCursos = "No hay cursos actualmente";
-				echo "<h3 class=\"text-center text-muted\">".$mensajeCursos."</h3>";
+				
 			}
 		}
 		function realizarInscripcion(){
+			
+			//Asignación de variables a los name de cada input
 			$idformapago = "1";//Debido a que solo hay pago físico, cambia cuando se agregue la funcionalidad de pago electrónico
 			$temp = $_POST[$_POST['radioprogaca']];
 			$idprogacademico = explode("$|$|$",$temp);
-			echo $idprogacademico[0];
-			echo "<br>";
-			echo $idprogacademico[1];
-			echo "<br>";
+			$nombreprogaca= $idprogacademico[1];
 			date_default_timezone_set("America/Bogota");
 			$horainscripcion = date('G:i:s');
-			echo $horainscripcion;
-			echo "<br>";
 			$fechahorainscripcion=date("Y-m-d");
-			echo $fechahorainscripcion;
-			echo "<br>";
 			$nombreinscrito = $_POST['nombre'];
-			echo $nombreinscrito;
-			echo "<br>";
 			$apellidoinscrito = $_POST['apellido'];
-			echo $apellidoinscrito;
-			echo "<br>";
 			$temp = $_POST['tipoDocumento'];
 			$idtipodocumento = explode("$|$|$",$temp);
-			echo $idtipodocumento[0];
-			echo "<br>";
-			echo $idtipodocumento[1];
-			echo "<br>";
 			$numerodocumento = $_POST['numeroDocumento'];
-			echo $numerodocumento;
-			echo "<br>";
 			$lugarexpedicion = $_POST['lugarExpedicion'];
-			echo $lugarexpedicion;
-			echo "<br>";
 			$fechaNacimiento = $_POST['fechaNacimiento'];
-			echo $fechaNacimiento;
-			echo "<br>";
 			$lugarnacimiento = $_POST['lugarNacimiento'];
-			echo $lugarnacimiento;
-			echo "<br>";
 			$direccionhogar = $_POST['direccionHogar'];
-			echo $direccionhogar;
-			echo "<br>";
 			$direccionoficina = $_POST['direccionOficina'];
-			echo $direccionoficina;
-			echo "<br>";
 			$telefonohogar = $_POST['telefonoHogar'];
-			echo $telefonohogar;
-			echo "<br>";
 			$telefonooficina = $_POST['inputteloficina'];
-			echo $telefonooficina;
-			echo "<br>";
 			$telefonocelular = $_POST['inputtelcelular'];
-			echo $telefonocelular;
-			echo "<br>";
 			$email = $_POST['inputemail'];
-			echo $email;
-			echo "<br>";
 			$profesion = $_POST['profesion'];
-			echo $profesion;
-			echo "<br>";
-
-			$dirfotoinscrito = $_POST['numeroDocumento'];
-			$dirhojavida = $_POST['numeroDocumento'];
-			$dirfotocedula = $_POST['numeroDocumento'];
-			$dirfotocarneseguro = $_POST['numeroDocumento'];
-			$dirfotoconsignacion = $_POST['numeroDocumento'];
-
+			
+			//Se crea la conección y se obtiene el programaacademico a partir del id del programaacademico
 			$conexion=Conexion::getInstance();
-			$consulta = "select numerodocumento from personainscrita where numerodocumento=\"$numerodocumento\",idprogramaacademico=\"$idprogacademico\",idtipodocumento=\"$idtipodocumento\"";
+			$ConsutoaTipoProgAca = "select pa.`idtipoprogramaacademico` FROM `programaacademico` pa WHERE `idprogramaacademico`=\"$idprogacademico[0]\"";
+			$registroidtipo = $conexion->obtener($ConsutoaTipoProgAca);
+			$regtipoprogaca=mysqli_fetch_assoc($registroidtipo);
+			//se consulta que la persona no este en la bd con el mismo programa academico
+			$consulta = "select numerodocumento from personainscrita where numerodocumento=\"$numerodocumento\" and idprogramaacademico=\"$idprogacademico[0]\" and idtipodocumento=\"$idtipodocumento[0]\"";
 			$registros = $conexion->obtener($consulta);
 			$existe = mysqli_num_rows($registros);	
+			//no exista una personas en el mismo curso
 			if ($existe ==0) {
-				$carpeta = '../archivos/'.$idprogacademico[1];
-					if (!file_exists($carpeta)) {
-						mkdir($carpeta, 0777, true);
-					}
-					
-					$uploadedfileload="true";
-					if (!($_FILES['fotoperfil']['type'] =="image/jpeg" OR $_FILES['fotoperfil']['type'] =="image/gif" OR $_FILES['fotoperfil']['type'] =="image/png")){
-						$msg ="";
-						$msg=$msg." Tu archivo tiene que ser JPG o GIF o PNG. Otros archivos no son permitidos<BR>";
-						$uploadedfileload="false";
-					}
-					$target_path = $carpeta;
-					$target_path = $target_path ."/perfil.jpg"; 
-					if($uploadedfileload=="true"){
-						if(move_uploaded_file($_FILES['fotoperfil']['tmp_name'], $target_path)) {
-							$registros= mysqli_query($conexion,"insert into puta (nombreputa, descripcion, linkfotoperfil, edadputa, correoputa, preciohora, telefonoputa, nicknameputa, contrasenaputa, videoputa, localidad) values ('$_REQUEST[nombre]','$_REQUEST[descripcion]','$target_path','$_REQUEST[edad]', '$_REQUEST[correo]', '$_REQUEST[precio]', '$_REQUEST[telefono]', '$_REQUEST[nickname]','$_REQUEST[contrasena]', '$_REQUEST[video]', '$_REQUEST[localidad]')") or die("Problemas en el insert".mysqli_error($conexion));
-							if ($registros) {
-								$mensaje = "cuenta creada exitosamente!";
-								$consulta=mysqli_query($conexion, "select idputa from puta where nicknameputa='".$nickname."'");
-								$fila = mysqli_fetch_row($consulta);
-								$idputa = $fila[0];	
-								//se suben a la BD sus caracterisiticas
-								if (!empty($_POST['cara'])) {
-									foreach($_POST['cara'] as $seleccionada) {
-										$consulta2=mysqli_query($conexion, "select idcaracteristica from caracteristicas where nombrecaracteristica='".$seleccionada."'");
-										$fila2 = mysqli_fetch_row($consulta2);
-										$idCaracteristica = $fila2[0];
-										$insercionCaracteristicas = mysqli_query($conexion, "insert into putacaracteristicas (idputa, idcaracteristica) values (".$idputa.",'".$idCaracteristica."')");
-										if ($insercionCaracteristicas) {
-										}else {
-											echo "no se ingreso las caracteristicas en la BD";
-										}
-									}
-								}
-								//se suben a la BD los servicios que ofrece
-								if (!empty($_POST['servi'])) {
-									foreach($_POST['servi'] as $seleccionada2) {
-										$consulta3=mysqli_query($conexion, "select idServicio from servicios where nombreservicio='".$seleccionada2."'");
-										$fila3 = mysqli_fetch_row($consulta3);
-										$idServicio = $fila3[0];
-										$insercionServicios = mysqli_query($conexion, "insert into putaServicios (idputa, idServicio) values (".$idputa.",'".$idServicio."')");
-										if ($insercionServicios) {
-											echo "si ingreso el valor".$seleccionada2;
-										}else {
-											echo "no se ingreso los servicios en la BD";
-										}
-									}
-								}
-
-								//Como el elemento es un arreglos utilizamos foreach para extraer todos los valores
-								foreach($_FILES["fotos"]['tmp_name'] as $key => $tmp_name){
-									//Validamos que el archivo exista
-									if($_FILES["fotos"]["name"][$key]) {
-										$filename = $_FILES["fotos"]["name"][$key]; //Obtenemos el nombre original del archivo
-										$source = $_FILES["fotos"]["tmp_name"][$key]; //Obtenemos un nombre temporal del archivo
-										$directorio = $carpeta; //Declaramos un  variable con la ruta donde guardaremos los archivos	
-										$target_path2 = $directorio.'/'.$filename; //Indicamos la ruta de destino, así como el nombre del archivo
-										//Movemos y validamos que el archivo se haya cargado correctamente
-										//El primer campo es el origen y el segundo el destino
-										if(move_uploaded_file($source, $target_path2)) {		
-											$registros= mysqli_query($conexion,"insert into fotos (idputa, linkfoto) values ($idputa, '$target_path2')") or die("Problemas en el insert ".mysqli_error($conexion));
-											if ($registros) {
-											}else{
-												$mensaje = "error al ingresar las fotos de la galeria";
-											}
-											} else {	
-											echo "Ha ocurrido un error, por favor inténtelo de nuevo.<br>";
-										}
-									}
-								}
-								crearArchivoScort($nickname);
-							}else{
-								$mensaje = "error al ingresar la prepago";
-							}
-						} 
-						else{
-							echo "No has puesto foto de perfil, trata de nuevo!";
-						}
+				//Se revisa que la carpeta del tipo programa academico no esté
+				if($regtipoprogaca['idtipoprogramaacademico']=='1'){
+					$carpeta = '../Archivos/Cursos/'.$nombreprogaca.'/Inscritos';
+				}else{
+					$carpeta = '../Archivos/Diplomados/'.$nombreprogaca.'/Inscritos';
+				}
+				//Se crea la carpeta
+				if (!file_exists($carpeta)) {
+					mkdir($carpeta, 0777, true);
+				}
+				//Se crea la carpeta de la persona con su número de documento
+				$carpeta=$carpeta.'/'.$numerodocumento;
+				if (!file_exists($carpeta)) {
+					mkdir($carpeta, 0777, true);
+				}
+				//se obtienen los archivos que se cargaron
+				$dirfotoinscrito = ingresarArchivo($carpeta,'fotocargada', 'foto3x4',["image/jpeg","image/png"]);
+				$dirhojavida =ingresarArchivo($carpeta,'hvcargada', 'hojaVida',["application/pdf"]);
+				$dirfotocedula = ingresarArchivo($carpeta,'cedulacargada', 'cedula',["application/pdf","image/png","image/jpeg"]);
+				$dirfotocarneseguro =ingresarArchivo($carpeta,'carnesegurocargado', 'carneSeguro',["application/pdf","image/png","image/jpeg"]);
+				$dirfotoconsignacion =ingresarArchivo($carpeta,'consignacioncargado', 'consignacion',["application/pdf","image/png","image/jpeg"]);
+				//Ya con todo lo necesario se valida que existan los archivos con el formato adecuado
+				if($dirfotoinscrito=="" OR $dirhojavida=="" OR $dirfotocedula=="" or $dirfotocarneseguro=="" or $dirfotoconsignacion=="" ){
+					Echo"Error en formato de algún archivo";
+				}else{
+					//si están correctos se pasa a insertar en la base de datos
+					$InsercionPersona = "insert into `personainscrita`(`idtipodocumento`, `idformapago`, `idprogramaacademico`, `fechahorainscripcion`, `horainscripcion`, `nombreinscrito`, `apellidoinscrito`, `numerodocumento`, `lugarexpedicion`, `fechanacimiento`, `lugarnacimiento`, `direccionhogar`, `direccionoficina`, `telefonohogar`, `telefonooficina`, `telefonocelular`, `email`, `profesion`, `dirfotoinscrito`, `dirhojavida`, `dirfotocedula`, `dirfotocarneseguro`, `dirfotoconsignacion`) VALUES (\"$idtipodocumento[0]\",\"$idformapago\",\"$idprogacademico[0]\",\"$fechahorainscripcion\",\"$horainscripcion\",\"$nombreinscrito\",\"$apellidoinscrito\",\"$numerodocumento\",\"$lugarexpedicion\",\"$fechaNacimiento\",\"$lugarnacimiento\",\"$direccionhogar\",\"$direccionoficina\",\"$telefonohogar\",\"$telefonooficina\",\"$telefonooficina\",\"$email\",\"$profesion\",\"$dirfotoinscrito\",\"$dirhojavida\",\"$dirfotocedula\",\"$dirfotocarneseguro\",\"$dirfotoconsignacion\")";
+					$resultadoInsert = $conexion->insertar($InsercionPersona);
+					if($resultadoInsert=='1'){
+						echo"<center>Se ha registrado satisfactoriamente</center>";
 					}else{
-						echo "<br><br><br><br>";
-						echo $msg;
-					}	
+						echo"<center>Error en la insersión en la base de datos</center>";
+					}
+				}
+			}else{
+				//si la persona ya está inscrita muestra un error
+				echo"Ya está Incrita la persona en este Programa Académico";
 			}
-			else{
-				$mensaje="el nickname ya existe, prueba con otro";
+
+		}
+		//Función para poder obtener los archivos de forma dinámica
+		function ingresarArchivo($carpeta, $namedecarga, $nombrearchivo, $tiposdisponibles){
+			$tipoarchivo="";
+			//$tiposdisponibles es un arreglo
+			foreach($tiposdisponibles as $i){
+				if ($_FILES[$namedecarga]['type'] ==$i){
+					$tipoarchivo = explode("/",$i)[1];
+				break;
+				}
 			}
+			//si no está el tipo en en el arreglo
+			if($tipoarchivo==""){
+				return "";
+			}
+			
+			$target_path = $carpeta;
+			$target_path = $target_path ."/".$nombrearchivo.".".$tipoarchivo; 
+			if(move_uploaded_file($_FILES[$namedecarga]['tmp_name'], $target_path)) {
+			return $target_path;
+			}
+
+
 		}
 ?>

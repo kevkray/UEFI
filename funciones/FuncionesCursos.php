@@ -37,7 +37,7 @@
 				}
 			}
 			else{
-				$mensajeCursos = "No hay cursos actualmente";
+				$mensajeCursos = "No hay Programas Academicos actualmente en este estado";
 				echo "<h3 class=\"text-center text-muted\">".$mensajeCursos."</h3>";
 			}
 		}
