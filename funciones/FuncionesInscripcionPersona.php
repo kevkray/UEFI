@@ -9,6 +9,7 @@
 				while ($reg=mysqli_fetch_assoc($registros)){
 					$idcurso = $reg['idprogramaacademico'];
 					$nombrecurso = $reg['nomprogramaacademico'];
+					echo "<option value=\"$idcurso$|$|$$nombrecurso\">$nombrecurso</option>";
 				}
 			}
 			else{
@@ -93,6 +94,7 @@
 			}
 
 		}
+		
 		//Función para poder obtener los archivos de forma dinámica
 		function ingresarArchivo($carpeta, $namedecarga, $nombrearchivo, $tiposdisponibles){
 			$tipoarchivo="";

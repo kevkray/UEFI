@@ -73,16 +73,16 @@
     <div class="row pt-5">
       <!-- Imágenes de UEFI -->
       <div class="col-md-6 sliderUEFI">
-        <div><img src="../img/fotosUEFI/fotoUEFI (1).jpg" alt="Sala UEFI" class="img-fluid"></div>
-        <div><img src="../img/fotosUEFI/fotoUEFI (2).jpg" alt="Sala UEFI" class="img-fluid"></div>
-        <div><img src="../img/fotosUEFI/fotoUEFI (3).jpg" alt="Sala UEFI" class="img-fluid"></div>
-        <div><img src="../img/fotosUEFI/fotoUEFI (6).jpg" alt="Sala UEFI" class="img-fluid"></div>
-        <div><img src="../img/fotosUEFI/fotoUEFI (5).jpg" alt="Sala UEFI" class="img-fluid"></div>
-        <div><img src="../img/fotosUEFI/fotoUEFI (7).jpg" alt="Sala UEFI" class="img-fluid"></div>
-        <div><img src="../img/fotosUEFI/fotoUEFI (8).jpg" alt="Sala UEFI" class="img-fluid"></div>
-        <div><img src="../img/fotosUEFI/fotoUEFI (9).jpg" alt="Sala UEFI" class="img-fluid"></div>
-        <div><img src="../img/fotosUEFI/fotoUEFI (10).jpg" alt="Sala UEFI" class="img-fluid"></div>
-        <div><img src="../img/fotosUEFI/fotoUEFI (11).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../Archivos/ImagenesUEFI/fotoUEFI (1).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../Archivos/ImagenesUEFI/fotoUEFI (2).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../Archivos/ImagenesUEFI/fotoUEFI (3).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../Archivos/ImagenesUEFI/fotoUEFI (6).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../Archivos/ImagenesUEFI/fotoUEFI (5).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../Archivos/ImagenesUEFI/fotoUEFI (7).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../Archivos/ImagenesUEFI/fotoUEFI (8).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../Archivos/ImagenesUEFI/fotoUEFI (9).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../Archivos/ImagenesUEFI/fotoUEFI (10).jpg" alt="Sala UEFI" class="img-fluid"></div>
+        <div><img src="../Archivos/ImagenesUEFI/fotoUEFI (11).jpg" alt="Sala UEFI" class="img-fluid"></div>
       </div>
       <!-- /Imágenes de UEFI -->
       <!-- ¿Quiénes somos? -->

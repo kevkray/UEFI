@@ -107,7 +107,6 @@
 					<div class="col-10">
 						<select class="form-control selectprogaca" id="selectNombreProgAca" name="selectcurso" style="display:block" oninvalid="setCustomValidity('Seleccione un Programa Academico')" 
 						oninput="setCustomValidity('')">
-						
 						<?php
 							mostrarnombreprogaca("1");
 						?>
@@ -123,14 +122,14 @@
 				<div class="form-group row">
 					<label for="inputnombre" class="col-2 col-form-label">Nombre</label>
 					<div class="col-10">
-						<input class="form-control" type="text" value="" placeholder="Nombre" id="inputnombre" name="nombre" oninvalid="setCustomValidity('El nombre es obligatorio')" 
+						<input class="form-control" type="text" value="" placeholder="Nombre" id="inputnombre" name="nombre" required oninvalid="setCustomValidity('El nombre es obligatorio')" 
 						oninput="setCustomValidity('')" maxlength="99" minlength="3">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputapellido" class="col-2 col-form-label" >Apellido</label>
 					<div class="col-10">
-						<input class="form-control" type="text" value="" placeholder="Apellido" id="inputapellido" name="apellido" oninvalid="setCustomValidity('El apellido es obligatorio')" 
+						<input class="form-control" type="text" value="" placeholder="Apellido" id="inputapellido" name="apellido" required oninvalid="setCustomValidity('El apellido es obligatorio')" 
 						oninput="setCustomValidity('')" maxlength="99" minlength="3">
 					</div>
 				</div> 
@@ -138,7 +137,7 @@
 				<div class="form-group row">
 					<label for="selectdocumento"class="col-2 col-form-label">Tipo de documento</label>
 					<div class="col-10">
-						<select class="form-control" id="selectdocumento" name="tipoDocumento" oninvalid="setCustomValidity('El documento de identificación es obligatorio')" 
+						<select class="form-control" id="selectdocumento" name="tipoDocumento" required oninvalid="setCustomValidity('El documento de identificación es obligatorio')" 
 						oninput="setCustomValidity('')">
 						<option value="1$|$|$Cédula">Cédula</option>
 						<option value="2$|$|$Tarjeta de Identidad">Tarjeta de Identidad</option>
@@ -149,35 +148,35 @@
 				<div class="form-group row">
 					<label for="inputnumerodocumento" class="col-2 col-form-label">Número documento</label>
 					<div class="col-10">
-						<input class="form-control" type="number" value="" placeholder="10223548593" id="inputnumerodocumento" name="numeroDocumento" pattern="[0-9]" oninvalid="setCustomValidity('El número del documento de identificación es obligatorio')" 
+						<input class="form-control" type="number" value="" placeholder="10223548593" id="inputnumerodocumento" name="numeroDocumento" pattern="[0-9]" required oninvalid="setCustomValidity('El número del documento de identificación es obligatorio')" 
 						oninput="setCustomValidity('')"maxlength="19" minlength="4">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputlugarinscrip" class="col-2 col-form-label">Lugar de Inscripción</label>
 					<div class="col-10">
-						<input class="form-control" type="text" value="" placeholder="Lugar de Inscripción del documento de identificación" id="inputlugarinscrip"  name="lugarExpedicion" oninvalid="setCustomValidity('El lugar de inscripción del documento de identificación es obligatorio')" 
+						<input class="form-control" type="text" value="" placeholder="Lugar de Inscripción del documento de identificación" id="inputlugarinscrip"  name="lugarExpedicion" required oninvalid="setCustomValidity('El lugar de inscripción del documento de identificación es obligatorio')" 
 						oninput="setCustomValidity('')" maxlength="149" minlength="3">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputfechanacimiento" class="col-2 col-form-label">Fecha de nacimiento</label>
 					<div class="col-10">
-						<input class="form-control" type="date" value="" id="inputfechanacimiento" name="fechaNacimiento" oninvalid="setCustomValidity('La fecha de nacimiento es obligatoria')" 
+						<input class="form-control" type="date" value="" id="inputfechanacimiento" required name="fechaNacimiento" oninvalid="setCustomValidity('La fecha de nacimiento es obligatoria')" 
 						oninput="setCustomValidity('')" >
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputlugarnacimiento" class="col-2 col-form-label">Lugar de nacimiento</label>
 					<div class="col-10">
-						<input class="form-control" type="text" value="" placeholder="Lugar de nacimiento" id="inputlugarnacimiento" name="lugarNacimiento" oninvalid="setCustomValidity('El lugar de inscripción del documento de nacimiento es obligatorio')" 
+						<input class="form-control" type="text" value="" placeholder="Lugar de nacimiento" id="inputlugarnacimiento" name="lugarNacimiento" required oninvalid="setCustomValidity('El lugar de inscripción del documento de nacimiento es obligatorio')" 
 						oninput="setCustomValidity('')" maxlength="149" minlength="3">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputdireccionhogar" class="col-2 col-form-label">Dirección Hogar</label>
 					<div class="col-10">
-						<input class="form-control" type="text" value="" placeholder="Dirección del Hogar" id="inputdireccionhogar" name="direccionHogar" oninvalid="setCustomValidity('La dirección de residencia es obligatoria')" 
+						<input class="form-control" type="text" value="" placeholder="Dirección del Hogar" id="inputdireccionhogar" name="direccionHogar" required oninvalid="setCustomValidity('La dirección de residencia es obligatoria')" 
 						oninput="setCustomValidity('')" maxlength="149" minlength="8">
 					</div>
 				</div>
@@ -202,28 +201,28 @@
 				<div class="form-group row">
 					<label for="inputtelcelular" class="col-2 col-form-label">Telefono Celular</label>
 					<div class="col-10">
-						<input class="form-control" type="number" value="" placeholder="301 999 9999" id="inputtelcelular" name="inputtelcelular" pattern="[0-9].{10}" oninvalid="setCustomValidity('El número telefónico celular es obligatorio')" 
+						<input class="form-control" type="number" value="" placeholder="301 999 9999" id="inputtelcelular" name="inputtelcelular" pattern="[0-9].{10}" required oninvalid="setCustomValidity('El número telefónico celular es obligatorio')" 
 						oninput="setCustomValidity('')" maxlength="11">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputemail" class="col-2 col-form-label">Correo Electrónico</label>
 					<div class="col-10">
-						<input class="form-control" type="email" value="" placeholder="tu_correo@ejemplo.com" id="inputemail" name='inputemail' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="setCustomValidity('El correo electrónico es obligatorio')" 
+						<input class="form-control" type="email" value="" placeholder="tu_correo@ejemplo.com" id="inputemail" name='inputemail' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required oninvalid="setCustomValidity('El correo electrónico es obligatorio')" 
 						oninput="setCustomValidity('')" maxlength="99" minlength="6">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputprofesion" class="col-2 col-form-label">Profesión</label>
 					<div class="col-10">
-						<input class="form-control" type="text" value="" placeholder="Profesión que desempeña" id="inputdireccionoficina" name="profesion" oninvalid="setCustomValidity('La profesión es obligatoria')" 
+						<input class="form-control" type="text" value="" placeholder="Profesión que desempeña" id="inputdireccionoficina" name="profesion" required oninvalid="setCustomValidity('La profesión es obligatoria')" 
 						oninput="setCustomValidity('')" maxlength="149" minlength="6">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="uploadfoto" class="col-2 col-form-label">Cargar foto 3X4</label>
 					<div class="col-10">
-						<input type="file" class="form-control-file" name="fotocargada" id="uploadfoto" aria-describedby="fileHelp" accept="image/jpg, imagen/png" oninvalid="setCustomValidity('La foto 3X4 es obligatoria')" 
+						<input type="file" class="form-control-file" name="fotocargada" id="uploadfoto" aria-describedby="fileHelp" accept="image/jpg, imagen/png" required oninvalid="setCustomValidity('La foto 3X4 es obligatoria')" 
 						oninput="setCustomValidity('')" >
 						<small id="fileHelp" class="form-text text-muted">Cargar una foto de 3X4 fondo blanco o azul.</small>
 					</div>
@@ -231,7 +230,7 @@
 				<div class="form-group row">
 					<label for="uploadhojavida" class="col-2 col-form-label">Cargar hoja de vida</label>
 					<div class="col-10">
-						<input type="file" class="form-control-file"name="hvcargada" id="uploadhojavida" aria-describedby="fileHelp" accept="application/pdf" oninvalid="setCustomValidity('La hoja de vida es obligatoria')" 
+						<input type="file" class="form-control-file"name="hvcargada" id="uploadhojavida" aria-describedby="fileHelp" accept="application/pdf" required oninvalid="setCustomValidity('La hoja de vida es obligatoria')" 
 						oninput="setCustomValidity('')">
 						<small id="fileHelp" class="form-text text-muted">Cargar un hoja de vida en formato pdf.</small>
 					</div>
@@ -239,7 +238,7 @@
 				<div class="form-group row">
 					<label for="uploadcedula" class="col-2 col-form-label">Cargar cédula</label>
 					<div class="col-10">
-						<input type="file" class="form-control-file" name="cedulacargada" id="uploadcedula" aria-describedby="fileHelp" accept="image/jpg, imagen/png, application/pdf" oninvalid="setCustomValidity('El escaner de la cédula es obligatoria')" 
+						<input type="file" class="form-control-file" name="cedulacargada" id="uploadcedula" aria-describedby="fileHelp" accept="image/jpg, imagen/png, application/pdf" required oninvalid="setCustomValidity('El escaner de la cédula es obligatoria')" 
 						oninput="setCustomValidity('')">
 						<small id="fileHelp" class="form-text text-muted">Cargar una foto png o jpg o achivo pdf con la cedula scaneada.</small>
 					</div>
@@ -247,7 +246,7 @@
 				<div class="form-group row">
 					<label for="uploadcarneseguro" class="col-2 col-form-label">Cargar carné seguro</label>
 					<div class="col-10">
-						<input type="file" class="form-control-file" name="carnesegurocargado"id="uploadcarneseguro" aria-describedby="fileHelp" accept="image/jpg, imagen/png, application/pdf" oninvalid="setCustomValidity('El escaner del carné del seguro médico es obligatorio')" 
+						<input type="file" class="form-control-file" name="carnesegurocargado"id="uploadcarneseguro" aria-describedby="fileHelp" accept="image/jpg, imagen/png, application/pdf" required oninvalid="setCustomValidity('El escaner del carné del seguro médico es obligatorio')" 
 						oninput="setCustomValidity('')">
 						<small id="fileHelp" class="form-text text-muted">Cargar una foto png o jpg o achivo pdf con el carné del seguro médico scaneado.</small>
 					</div>
@@ -255,7 +254,7 @@
 				<div class="form-group row">
 					<label for="uploadconsignacion" class="col-2 col-form-label">Cargar consignación</label>
 					<div class="col-10">
-						<input type="file" class="form-control-file" name="consignacioncargado"id="uploadconsignacion" aria-describedby="fileHelp" accept="image/jpg, imagen/png, application/pdf" oninvalid="setCustomValidity('El escaner del recibo de pago es obligatorio')" 
+						<input type="file" class="form-control-file" name="consignacioncargado"id="uploadconsignacion" aria-describedby="fileHelp" accept="image/jpg, imagen/png, application/pdf" required oninvalid="setCustomValidity('El escaner del recibo de pago es obligatorio')" 
 						oninput="setCustomValidity('')">
 						<small id="fileHelp" class="form-text text-muted">Cargar una foto png o jpg o achivo pdf del recibo de pago del curso scaneado.(Se debe ver el timbre del Banco de Occidente)</small>
 					</div>
@@ -264,7 +263,7 @@
 				<div class="form-group row">
 					<div class="col-xs-offset-3 col-xs-12">
 					<label class="checkbox-inline">
-						<input type="checkbox" value="agree" oninvalid="setCustomValidity('Debe aceptar los Terminos y Condiciones')" 
+						<input type="checkbox" value="agree" req oninvalid="setCustomValidity('Debe aceptar los Terminos y Condiciones')" 
 						oninput="setCustomValidity('')">  Acepto <a href="terminos.php">Terminos y condiciones</a>.
 					</label>
 					</div>
